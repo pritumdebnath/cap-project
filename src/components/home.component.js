@@ -10,7 +10,8 @@ export default class Home extends Component {
   render() {
     return (
       <section className="destinations">
-        <h3>Cincinnati Highlights</h3>
+        <h3 className="h1 text-secondary">Welcome to Cincinnati</h3>
+        <br />
         <div className="grid">
           <div>
             <img src={image1} alt="destination-1" />
