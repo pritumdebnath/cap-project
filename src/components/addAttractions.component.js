@@ -80,8 +80,8 @@ export default class addAttractions extends Component {
   
   render() {
     return (
-      <div class="container"></div>,<div class="container">
-<div class="stepwizard col-md-offset-3">
+  <div class="container">
+  <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
       <div class="stepwizard-step">
         <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
@@ -151,7 +151,7 @@ export default class addAttractions extends Component {
     </div>
   </form>
 </div>
-      
+
     )
     
   }
