@@ -54,7 +54,7 @@ body {
     font-size: 18px;
   }
 
-  .destinations .grid {
+  /* .destinations .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -69,7 +69,7 @@ body {
 
   .login .form-control input {
     width: 50vw;
-  }
+  } */
 
 }
 
