@@ -6,8 +6,7 @@ import kingsIsland from "../assets/kingsIsland2.jpeg";
 import greatAmerican from "../assets/greatAmerican.jpeg";
 import paycorStadium from "../assets/paycorStadium.jpeg";
 import tqlStadium from "../assets/tqlStadium.jpeg";
-import tqlStadium from "../assets/tqlStadium.jpeg";
-import tqlStadium from "../assets/tqlStadium.jpeg";
+
 
 import '../components/style/attractions.css';
 
