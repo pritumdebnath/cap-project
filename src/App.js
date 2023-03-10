@@ -8,6 +8,7 @@ import Attractions from "./components/attractions.component";
 import addAttractions from "./components/addAttractions.component";
 import About from "./components/about.component";
 import Contact from "./components/contactUs.component"
+import Showcase from './components/showcase';
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
       <Navbar />
       <br/>
       {/* change route names */}
-      <Route path="/" exact component={Home} />
+      <Route path="/" exact>
+        <Showcase/>
+        <Home />
+      </Route>
       <Route path="/attractions" component={Attractions} />
       <Route path="/addattractions" component={addAttractions} />
       <Route path="/about" component={About} />
