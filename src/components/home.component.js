@@ -9,9 +9,9 @@ import "../components/style/home.style.css";
 export default class Home extends Component {
   render() {
     return (
-      <section className="destinations">
+      <section className="destinations container">
           <div className="row justify-content-center">
-            <div className="col-3 mt-5">
+            <div className="col-md-4 mt-5">
               <div className="card profile-card-5">
                 <div className="card-img-block">
                   <img
@@ -30,7 +30,7 @@ export default class Home extends Component {
               </div>
             </div>
 
-            <div className="col-3 mt-5">
+            <div className="col-md-4 mt-5">
               <div className="card profile-card-5">
                 <div className="card-img-block">
                   <img
@@ -49,7 +49,7 @@ export default class Home extends Component {
               </div>
             </div>
 
-            <div className="col-3 mt-5">
+            <div className="col-md-4 mt-5">
               <div className="card profile-card-5">
                 <div className="card-img-block">
                   <img
