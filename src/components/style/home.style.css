@@ -68,7 +68,7 @@ body {
 
 @media (min-width: 768px) {
   .showcase {
-    background-position: top;
+    background-position: c;
   }
 
   .showcase .showcase-overlay h1 {
