@@ -81,7 +81,7 @@ export default class addAttractions extends Component {
   
   render() {
     return (
-      <div className="container-add">
+      <div className="container-add" style={{ margin: '100px' }}>
   <form onSubmit={this.onSubmit}>
     <div className="row setup-content" id="step-1">
       <div className="col-md-6 offset-md-3">
@@ -96,6 +96,7 @@ export default class addAttractions extends Component {
             placeholder="Enter Attraction"
           />
         </div>
+        <br />
         <div className="form-group">
           <input
             type="text"
@@ -121,6 +122,7 @@ export default class addAttractions extends Component {
             placeholder="Enter Image URL"
           />
         </div>
+        <br />
         <div className="form-group">
           <input
             type="text"
@@ -146,6 +148,7 @@ export default class addAttractions extends Component {
             placeholder="Enter Rating"
           />
         </div>
+        <br />
         <div className="form-group">
           <input
             type="text"
