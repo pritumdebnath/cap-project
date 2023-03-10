@@ -10,49 +10,18 @@ export default class Home extends Component {
   render() {
     return (
       <section className="destinations">
-        {
-          /* <h3 className="h1 text-secondary">Welcome to Cincinnati</h3>
-        <br />
-        /*<div className="grid">
-          <div>
-            <img src={image1} alt="destination-1" />
-            <h3 className="hhh">Brent Spence Bridge</h3>
-            <p className="ppp">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos, ab nesciunt? Molestias rem qui sequi!
-            </p>
-          </div>
-
-          <div>
-            <img src={image2} alt="destination-2" />
-            <h3 className="hhh">Paycoor Stadium</h3>
-            <p className="ppp">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos, ab nesciunt? Molestias rem qui sequi!
-            </p>
-          </div>
-
-          <div>
-            <img src={image3} alt="destination-3" />
-            <h3 className="hhh">Cincinnati Skyline</h3>
-            <p className="ppp">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos, ab nesciunt? Molestias rem qui sequi!
-            </p>
-          </div>
-        </div> */
-          <div className="row">
-            <div className="col-md-4 mt-4">
+          <div className="row justify-content-center">
+            <div className="col-3 mt-4">
               <div className="card profile-card-5">
                 <div className="card-img-block">
                   <img
                     className="card-img-top"
                     src={image1}
-                    alt="Card image cap"
+                    alt="brentspence"
                   />
                 </div>
                 <div className="card-body pt-0">
-                  <h3 className="hhh card-title">Brent Spence Bridge</h3>
+                  <h5 className="hhh card-title text-center">Brent Spence Bridge</h5>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -61,17 +30,17 @@ export default class Home extends Component {
               </div>
             </div>
 
-            <div className="col-md-4 mt-4">
+            <div className="col-3 mt-4">
               <div className="card profile-card-5">
                 <div className="card-img-block">
                   <img
                     className="card-img-top"
                     src={image2}
-                    alt="Card image cap"
+                    alt="paycor"
                   />
                 </div>
                 <div className="card-body pt-0">
-                  <h3 className="hhh card-title">Paycor Stadium</h3>
+                  <h5 className="hhh card-title text-center">Paycor Stadium</h5>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -80,17 +49,17 @@ export default class Home extends Component {
               </div>
             </div>
 
-            <div className="col-md-4 mt-4">
+            <div className="col-3 mt-4">
               <div className="card profile-card-5">
                 <div className="card-img-block">
                   <img
                     className="card-img-top"
                     src={image3}
-                    alt="Card image cap"
+                    alt="skyline"
                   />
                 </div>
                 <div className="card-body pt-0">
-                  <h3 className="hhh card-title">Cincinnati Skyline</h3>
+                  <h5 className="hhh card-title text-center">Cincinnati Skyline</h5>
                   <p className="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -99,7 +68,7 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
-        }
+        
       </section>
     );
   }
