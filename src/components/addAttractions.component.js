@@ -81,7 +81,7 @@ export default class addAttractions extends Component {
   
   render() {
     return (
-      <div className="container">
+      <div className="container-add">
   <form onSubmit={this.onSubmit}>
     <div className="row setup-content" id="step-1">
       <div className="col-md-6 offset-md-3">
