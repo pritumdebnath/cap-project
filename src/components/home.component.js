@@ -15,7 +15,7 @@ export default class Home extends Component {
       <h2 className="text-center hhh">This is Cincinnati!</h2>
       <section className="destinations container">
         <div className="row justify-content-center">
-          <div className="col-md-4 mt-4 mb-3 ">
+          <div className="col-md-4 mt-5 mb-3 ">
             <div className="card profile-card-5">
               <div className="card-img-block">
                 <img
@@ -33,7 +33,7 @@ export default class Home extends Component {
             </div>
           </div>
 
-          <div className="col-md-4 mt-4 mb-3">
+          <div className="col-md-4 mt-5 mb-3">
             <div className="card profile-card-5">
               <div className="card-img-block">
                 <img
@@ -51,7 +51,7 @@ export default class Home extends Component {
             </div>
           </div>
 
-          <div className="col-md-4 mt-4 mb-3">
+          <div className="col-md-4 mt-5 mb-3">
             <div className="card profile-card-5">
               <div className="card-img-block">
                 <img
