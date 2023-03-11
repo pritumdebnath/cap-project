@@ -9,67 +9,68 @@ import "../components/style/home.style.css";
 export default class Home extends Component {
   render() {
     return (
+      
+      <><br />
+      <br />
+      <h2 className="text-center hhh">This is Cincinnati!</h2>
       <section className="destinations container">
-          <div className="row justify-content-center">
-            <div className="col-md-4 mt-5">
-              <div className="card profile-card-5">
-                <div className="card-img-block">
-                  <img
-                    className="card-img-top"
-                    src={image1}
-                    alt="brentspence"
-                  />
-                </div>
-                <div className="card-body pt-0">
-                  <h5 className="hhh card-title text-center">Brent Spence Bridge</h5>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
+        <div className="row justify-content-center">
+          <div className="col-md-4 mt-4 mb-3 ">
+            <div className="card profile-card-5">
+              <div className="card-img-block">
+                <img
+                  className="card-img-top"
+                  src={image1}
+                  alt="brentspence" />
               </div>
-            </div>
-
-            <div className="col-md-4 mt-5">
-              <div className="card profile-card-5">
-                <div className="card-img-block">
-                  <img
-                    className="card-img-top"
-                    src={image2}
-                    alt="paycor"
-                  />
-                </div>
-                <div className="card-body pt-0">
-                  <h5 className="hhh card-title text-center">Paycor Stadium</h5>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4 mt-5">
-              <div className="card profile-card-5">
-                <div className="card-img-block">
-                  <img
-                    className="card-img-top"
-                    src={image3}
-                    alt="skyline"
-                  />
-                </div>
-                <div className="card-body pt-0">
-                  <h5 className="hhh card-title text-center">Cincinnati Skyline</h5>
-                  <p className="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
+              <div className="card-body pt-0">
+                <h5 className="hhh card-title text-center m-3">Brent Spence Bridge</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
               </div>
             </div>
           </div>
-        
-      </section>
+
+          <div className="col-md-4 mt-4 mb-3">
+            <div className="card profile-card-5">
+              <div className="card-img-block">
+                <img
+                  className="card-img-top"
+                  src={image2}
+                  alt="paycor" />
+              </div>
+              <div className="card-body pt-0">
+                <h5 className="hhh card-title text-center m-3">Paycor Stadium</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4 mt-4 mb-3">
+            <div className="card profile-card-5">
+              <div className="card-img-block">
+                <img
+                  className="card-img-top"
+                  src={image3}
+                  alt="skyline" />
+              </div>
+              <div className="card-body pt-0">
+                <h5 className="hhh card-title text-center m-3">Cincinnati Skyline</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section></>
     );
   }
 }
