@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';  
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import kingsIsland from "../assets/kingsIsland2.jpeg";
+import greatAmerican from "../assets/greatAmerican.jpeg";
+import paycorStadium from "../assets/paycorStadium.jpeg";
+import tqlStadium from "../assets/tqlStadium.jpeg";
+
+
+import '../components/style/attractions.css';
+
+
+
 
 const Attraction = props => (
     <tr>
@@ -55,22 +66,86 @@ export default class Attractions extends Component {
     return (
         <div>
         <h3>Posted Attractions</h3>
-        <table className="table">
-          <thead className="thead-light">
-            <tr>
-              <th>Attraction</th>
-              <th>Address</th>
-              <th>ImageURL</th>
-              <th>Description</th>
-              <th>Ratings</th>
-              <th>User</th>
-            </tr>
-          </thead>
+
+  <div className="container">
+    <div className="row">
+      <div className="col-md-4">
+      <div class="card">     
+   <h4 class="card-title">Kings Island</h4>
+    <div class="card-body">  
+        <img className="card-img-top" src={kingsIsland}alt="Kings Island Roller Coaster" />
+  
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  
+    </div>
+    </div>
+    </div>
+    <div className="col-md-4">
+    <div class="card">
+    <h4 class="card-title text-align-center">Great American Ballpark</h4>
+    <div class="card-body">
+    <img className="card-img-top greatAmerican" src={greatAmerican}alt="greatAmericanStadium" />
+      
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
+    </div>
+
+      
+<div className="col-md-4">
+  <div class="card card">    
+    <h4 class="card-title">TQL Stadium</h4>
+    <div class="card-body ">
+   
+    <img className="card-img-top tql" src={tqlStadium}alt="TQL Stadium" />
+    
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+<div className="col-md-4">
+  <div class="card card">    
+    <h4 class="card-title">TQL Stadium</h4>
+    <div class="card-body ">
+   
+    <img className="card-img-top tql" src={tqlStadium}alt="TQL Stadium" />
+    
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+<div className="col-md-4">
+  <div class="card card">    
+    <h4 class="card-title">TQL Stadium</h4>
+    <div class="card-body ">
+   
+    <img className="card-img-top tql" src={tqlStadium}alt="TQL Stadium" />
+    
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+<div className="col-md-4">
+  <div class="card card">    
+    <h4 class="card-title">Paycor Stadium</h4>
+    <div class="card-body ">
+   
+    <img className="card-img-top paycor" src={paycorStadium}alt="Paycor Stadium" />
+    
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
           <tbody>
             { this.attractionList() }
           </tbody>
-        </table>
+      
       </div>
+
+      
     )
   }
 }

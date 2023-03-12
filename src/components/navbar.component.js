@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "../components/style/navbar.style.css";
+import image1 from '../assets/menubutton.png';
 
 
 export default class Navbar extends Component {
@@ -8,11 +9,11 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <nav className='navbar'>
-        <Link to="/" className='logo'>Adventure</Link>
-        <div className='nav-links'>
+      <nav className='navbar navbarfont'>
+        <Link to="/" className='logo'>QCT</Link>
+        <div className='nav-links navbarfont'>
           <ul>
-            <li>
+            <li className='active'>
               <Link to="/">Home</Link>
             </li>
             <li>
@@ -29,10 +30,18 @@ export default class Navbar extends Component {
             </li>
           </ul>
         </div>
+        <img src={image1} alt='navbutton' className='menu-hamburger'/>
       </nav>
     );
   }
 }
+
+// const menuHamburger = document.querySelector('.menu-hamburger')
+// const navLinks = document.querySelector('.nav-links')
+
+// menuHamburger.addEventListener('click',()=>{
+//   navLinks.classList.toggle('mobile-menu')
+// })
 
 /* <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
         <Link to="/" className="navbar-brand">Home</Link>
