@@ -9,6 +9,7 @@ import addAttractions from "./components/addAttractions.component";
 import About from "./components/about.component";
 import Contact from "./components/contactUs.component"
 import Showcase from './components/showcase';
+import Middle from './components/middle.component';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       <Route path="/" exact>
         <Showcase/>
         <Home />
+        <br />
+        <Middle />
+        <br />
       </Route>
       <Route path="/attractions" component={Attractions} />
       <Route path="/addattractions" component={addAttractions} />
