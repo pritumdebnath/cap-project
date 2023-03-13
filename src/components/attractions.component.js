@@ -8,6 +8,7 @@ import paycorStadium from "../assets/paycorStadium.jpeg";
 import tqlStadium from "../assets/tqlStadium.jpeg";
 import heritageBankArena from "../assets/heritageBankArena.jpeg";
 import cincinnatiZoo from "../assets/cincinnatiZoo.jpeg";
+import cincinnatiSkyline2 from "../assets/cincinnatiSkyline2.jpeg";
 
 import '../components/style/attractions.css';
 
@@ -65,7 +66,9 @@ export default class Attractions extends Component {
     
     render() {
     return (
-        <div>
+      <div> 
+      <img className="home-component" src={cincinnatiSkyline2}alt="Cincinnati Skyline" />
+            
         <h3>Posted Attractions</h3>
 
   <div className="container">
