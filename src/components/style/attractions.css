@@ -37,6 +37,16 @@
     height:217px;
 }
 
+.uc{
+    height: 200px;
+}
+.xavier{
+    height: 200px;
+}
+.taftTheater{
+    height: 200px;
+}
+
 .kIHeader{
     text-align: center;
     margin-top: 30px;
@@ -79,3 +89,4 @@
     font-weight: 200;
     font-size: 32px;
 }
+

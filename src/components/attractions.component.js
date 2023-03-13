@@ -148,7 +148,7 @@ export default class Attractions extends Component {
     <h3 class="card-title cZHeader">University of Cincinnati</h3>
     <div class="card-body ">
    
-    <img className="card-img-top ucCampus" src={ucCampus}alt="University of Cincinnati" />
+    <img className="card-img-top uc" src={ucCampus}alt="University of Cincinnati" />
     
       <p class="card-text">UC boasts many top-ranked programs, and is the No. 1 public university for co-op (No. 3 overall). Named among the world's 100 most-innovative universities and our campus is listed among the world's most beautiful.</p>
     </div>
@@ -159,7 +159,7 @@ export default class Attractions extends Component {
     <h3 class="card-title cZHeader">Xavier University</h3>
     <div class="card-body ">
    
-    <img className="card-img-top xavierUniversity" src={xavierUniversity}alt="Xavier University" />
+    <img className="card-img-top xavier" src={xavierUniversity}alt="Xavier University" />
     
       <p class="card-text">Xavier University is a private university located in Cincinnati, Ohio, providing a liberal arts education in the Jesuit Catholic tradition. Founded in 1831, the University is the sixth-oldest Catholic university in the nation.</p>
     </div>
