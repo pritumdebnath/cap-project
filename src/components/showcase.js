@@ -7,7 +7,7 @@ const Showcase = () => {
         <h1>Queen City Tours</h1>
 
         <a href="./attractions" className="btn btn-danger">
-          Visit US
+          Visit Us
         </a>
       </div>
     </section>
