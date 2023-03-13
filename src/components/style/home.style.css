@@ -38,7 +38,15 @@ body {
   padding-bottom: 20px;
 }
 
-
+/* #home-section{
+  position: relative;
+  z-index: 1;
+}
+*/
+.home-cards{
+  position: relative;
+  z-index:-1;
+}
 
 
 @media (min-width: 768px) {
@@ -96,3 +104,12 @@ profile-card-5{
   box-shadow:0 0 10px rgba(0,0,0,0.63);
 }
 
+hr {
+  clear:both;
+  margin-bottom: 0px;
+  border: 0;
+  height: 6px;
+  background-image: linear-gradient(to right, white, transparent, white), linear-gradient(transparent, rgba(0,0,0,0.55) 150%);    
+  background-image: -moz-linear-gradient(to right, white, transparent, white), -webkit-linear-gradient(transparent, rgba(0,0,0,0.55) 150%);
+  background-image: -ms-linear-gradient(to right, white, transparent, white), -webkit-linear-gradient(transparent, rgba(0,0,0,0.55) 150%);
+}

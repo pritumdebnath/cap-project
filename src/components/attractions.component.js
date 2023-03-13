@@ -7,7 +7,11 @@ import greatAmerican from "../assets/greatAmerican.jpeg";
 import paycorStadium from "../assets/paycorStadium.jpeg";
 import tqlStadium from "../assets/tqlStadium.jpeg";
 import heritageBankArena from "../assets/heritageBankArena.jpeg";
+import ucCampus from "../assets/ucCampus.jpeg";
+import xavierUniversity from "../assets/xavierUniversity.jpeg";
 import cincinnatiZoo from "../assets/cincinnatiZoo.jpeg";
+import taftTheater from "../assets/taftTheater.jpeg";
+import cincinnatiSkyline from "../assets/cincinnatiSkyline.jpeg";
 
 import '../components/style/attractions.css';
 
@@ -65,29 +69,31 @@ export default class Attractions extends Component {
     
     render() {
     return (
-        <div>
-        <h3>Posted Attractions</h3>
+      <div> 
+      <img className="home-component" src={cincinnatiSkyline}alt="Cincinnati Skyline" />
+            
+        <h2 id="header">Posted Attractions</h2>
 
   <div className="container">
     <div className="row">
       <div className="col-md-4">
       <div class="card">     
-   <h4 class="card-title">Kings Island</h4>
+   <h3 class="card-title kIHeader">Kings Island</h3>
     <div class="card-body">  
         <img className="card-img-top" src={kingsIsland}alt="Kings Island Roller Coaster" />
   
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">Kings Island is a 364-acre amusement park located 24 miles (39 km) northeast of Cincinnati in Mason, Ohio, United States. Owned and operated by Cedar Fair, the park first opened in 1972 by the Taft Broadcasting Company.</p>
   
     </div>
     </div>
     </div>
     <div className="col-md-4">
     <div class="card">
-    <h4 class="card-title gAHeading">Great American Ballpark</h4>
+    <h3 class="card-title gAHeader">Great American Ballpark</h3>
     <div class="card-body">
     <img className="card-img-top greatAmerican" src={greatAmerican}alt="greatAmericanStadium" />
       
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text">Located on the winding banks of the Ohio River in downtown Cincinnati, Great American Ball Park serves as the home of the Cincinnati Reds, baseball's first professional franchise.</p>
     </div>
   </div>
     </div>
@@ -95,45 +101,78 @@ export default class Attractions extends Component {
       
 <div className="col-md-4">
   <div class="card card">    
-    <h4 class="card-title">TQL Stadium</h4>
+    <h3 class="card-title tQLHeader">TQL Stadium</h3>
     <div class="card-body ">
    
     <img className="card-img-top tql" src={tqlStadium}alt="TQL Stadium" />
     
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text">TQL Stadium, called West End Stadium during construction, is a soccer-specific stadium in Cincinnati, Ohio. It is the home of FC Cincinnati, a Major League Soccer (MLS) team that had been temporarily playing at Nippert Stadium.</p>
     </div>
   </div>
 </div>
 <div className="col-md-4">
   <div class="card card">    
-    <h4 class="card-title">Paycor Stadium</h4>
+    <h3 class="card-title paycorHeader">Paycor Stadium</h3>
     <div class="card-body ">
    
     <img className="card-img-top paycor" src={paycorStadium}alt="Paycor Stadium" />
     
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text">Paycor Stadium has several amenities including 144 luxury suites, over 7,000 club seats, two club restaurants and a Bengals team store. Fans attending games at Paycor Stadium can see beautiful views of the Cincinnati skyline and the Ohio River.</p>
     </div>
   </div>
 </div>
 <div className="col-md-4">
   <div class="card card">    
-    <h4 class="card-title">Heritage Bank Arena</h4>
+    <h3 class="card-title hAHeader">Heritage Bank Arena</h3>
     <div class="card-body ">
    
     <img className="card-img-top heritage" src={heritageBankArena}alt="Cyclones Stadium" />
     
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text">The arena seats 17,556 people and is the largest indoor arena in the Greater Cincinnati region with 346,100 square feet of space. The current main tenant is the Cincinnati Cyclones of the ECHL.</p>
     </div>
   </div>
 </div>
 <div className="col-md-4">
   <div class="card card">    
-    <h4 class="card-title">Cincinnati Zoo</h4>
+    <h3 class="card-title cZHeader">Cincinnati Zoo</h3>
     <div class="card-body ">
    
-    <img className="card-img-top cincinnatiZoo" src={cincinnatiZoo}alt="Land of Illusion" />
+    <img className="card-img-top cincinnatiZoo" src={cincinnatiZoo}alt="Cincinnati Zoo" />
     
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text">Rated by peer zoological parks as one of the best zoos in the nation, the Cincinnati Zoo continues to set the standard for conservation, education and preservation of wild animals and wild spaces. More than 1.5 million people visit the Zoo annually.</p>
+    </div>
+  </div>
+</div>
+<div className="col-md-4">
+  <div class="card card">    
+    <h3 class="card-title cZHeader">University of Cincinnati</h3>
+    <div class="card-body ">
+   
+    <img className="card-img-top ucCampus" src={ucCampus}alt="University of Cincinnati" />
+    
+      <p class="card-text">UC boasts many top-ranked programs, and is the No. 1 public university for co-op (No. 3 overall). Named among the world's 100 most-innovative universities and our campus is listed among the world's most beautiful.</p>
+    </div>
+  </div>
+</div>
+<div className="col-md-4">
+  <div class="card card">    
+    <h3 class="card-title cZHeader">Xavier University</h3>
+    <div class="card-body ">
+   
+    <img className="card-img-top xavierUniversity" src={xavierUniversity}alt="Xavier University" />
+    
+      <p class="card-text">Xavier University is a private university located in Cincinnati, Ohio, providing a liberal arts education in the Jesuit Catholic tradition. Founded in 1831, the University is the sixth-oldest Catholic university in the nation.</p>
+    </div>
+  </div>
+</div>
+<div className="col-md-4">
+  <div class="card card">    
+    <h3 class="card-title cZHeader">Taft Theater</h3>
+    <div class="card-body ">
+   
+    <img className="card-img-top taftTheater" src={taftTheater}alt="Taft Theater" />
+    
+      <p class="card-text">Located in the heart of downtown Cincinnati, the Taft Theatre is your premiere destination for live entertainment. The Theatre opened in 1928 and is a marvelous display of the neo-classical/art deco architecture that prevailed during the time period.</p>
     </div>
   </div>
 </div>

@@ -3,18 +3,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import image1 from "../assets/cinci1.jpg";
 import image2 from "../assets/cinci2.jpg";
 import image3 from "../assets/cinci3.jpg";
-import image4 from "../assets/tql1.jpeg";
 import "../components/style/home.style.css";
 
 export default class Home extends Component {
   render() {
     return (
       
-      <><br />
-      <br />
+      <div id="home-section" style={{position: 'relative'}}>
       <h2 className="text-center hhh">This is Cincinnati!</h2>
+      <hr />
       <section className="destinations container">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center home-cards">
           <div className="col-md-4 mt-5 mb-3 ">
             <div className="card profile-card-5">
               <div className="card-img-block">
@@ -69,8 +68,9 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-
-      </section></>
+      </section>
+      </div>
+      
     );
   }
 }

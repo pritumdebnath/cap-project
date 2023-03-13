@@ -74,7 +74,22 @@ export default class addAttractions extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    this.nextStep(); // move to next step
+
+    const attraction = {
+      attraction: this.state.attraction,
+      address: this.state.address,
+      image: this.state.image,
+      description: this.state.description,
+      ratings: this.state.ratings,
+      user: this.state.user
+    }
+
+    console.log(attraction);
+
+    axios.post('http://localhost:5000/attractions/add', attraction)
+      .then(res => console.log(res.data));
+
+    window.location = '/'
   };
 
   render() {

@@ -1,0 +1,13 @@
+.middle {
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #050115da;
+}
+
+.new-image {
+  height: 200px;
+  border-radius: 5px;
+  border: solid 1px white;
+}

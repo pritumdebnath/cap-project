@@ -1,7 +1,28 @@
+.home-component{
+    height: 60vh;
+    width: 100vw;
+    
+}
+
+#header{
+    text-align: center;
+    margin-top: 30px;
+    font-family: serif;
+    font-weight: 200;
+    font-size: 40px;
+}
+
 .card{
-    height:400px;
+    height:500px;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+.card-text{
+    margin-top: 20px;
+    font-weight: 400;
+    font-family: serif;
+    font-size: 16px;
 }
 
 .tql{
@@ -14,4 +35,47 @@
 
 .coney{
     height:217px;
+}
+
+.kIHeader{
+    text-align: center;
+    margin-top: 30px;
+    font-family: serif;
+    font-weight: 200;
+    font-size: 32px;
+}
+.gAHeader{
+    text-align: center;
+    margin-top: 30px;
+    font-family: serif;
+    font-weight: 200;
+    font-size: 32px;
+}
+.tQLHeader{
+    text-align: center;
+    margin-top: 30px;
+    font-family: serif;
+    font-weight: 200;
+    font-size: 32px;
+}
+.paycorHeader{
+    text-align: center;
+    margin-top: 30px;
+    font-family: serif;
+    font-weight: 200;
+    font-size: 32px;
+}
+.hAHeader{
+    text-align: center;
+    margin-top: 30px;
+    font-family: serif;
+    font-weight: 200;
+    font-size: 32px;
+}
+.cZHeader{
+    text-align: center;
+    margin-top: 30px;
+    font-family: serif;
+    font-weight: 200;
+    font-size: 32px;
 }
