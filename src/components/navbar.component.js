@@ -10,9 +10,9 @@ export default class Navbar extends Component {
   
   render() {
     return (
-      <nav className="navbar active navbarfont navbar-expand-lg">
+      <nav className="navbar active navbarfont navbar-expand-lg" id="nav-container">
         <button
-          className="navbar-toggler bg-light"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -20,34 +20,28 @@ export default class Navbar extends Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse nav-links navbarfont" id="navbarSupportedContent">
-        {/* <div className="nav-links navbarfont"> */}
-          <Link to="/" className="logo">
-            QCA
-          </Link>
-
-          
+          <Link to="/" className="logo">QCA</Link>
             <ul className="navbar-nav">
-              <li className="active">
-                <Link to="/">Home</Link>
+              <li className="active nav-item">
+                <Link to="/" className="nav-link">Home</Link>
               </li>
-              <li className="active">
-                <Link to="/attractions">Attractions</Link>
+              <li className="active nav-item">
+                <Link to="/attractions" className="nav-link">Attractions</Link>
               </li>
-              <li className="active">
-                <Link to="/addattractions">Add Attraction</Link>
+              <li className="active nav-item">
+                <Link to="/addattractions" className="nav-link">Add Attraction</Link>
               </li>
-              <li className="active">
-                <Link to="/about">About</Link>
+              <li className="active nav-item">
+                <Link to="/about" className="nav-link">About</Link>
               </li>
-              <li className="active">
-                <Link to="/contactus">Contact Us</Link>
+              <li className="active nav-item">
+                <Link to="/contactus" className="nav-link">Contact Us</Link>
               </li>
             </ul>
           </div>
-        {/* </div> */}
       </nav>
     );
   }

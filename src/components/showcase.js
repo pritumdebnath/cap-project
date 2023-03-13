@@ -2,7 +2,7 @@ import React from 'react'
 
 const Showcase = () => {
   return (
-    <section className='showcase'>
+    <section className='showcase' style={{marginTop: '-13vh'}}>
       <div className='showcase-overlay'>
         <h1>Queen City Tours</h1>
         <p>

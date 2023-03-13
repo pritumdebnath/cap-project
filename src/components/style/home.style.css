@@ -38,7 +38,15 @@ body {
   padding-bottom: 20px;
 }
 
-
+/* #home-section{
+  position: relative;
+  z-index: 1;
+}
+*/
+.home-cards{
+  position: relative;
+  z-index:-1;
+}
 
 
 @media (min-width: 768px) {
