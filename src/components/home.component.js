@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import image1 from "../assets/cinci1.jpg";
 import image2 from "../assets/cinci2.jpg";
 import image3 from "../assets/cinci3.jpg";
-import image4 from "../assets/tql1.jpeg";
 import "../components/style/home.style.css";
 
 export default class Home extends Component {
