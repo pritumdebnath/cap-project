@@ -19,6 +19,8 @@ function App() {
       {/* change route names */}
       <Route path="/" exact>
         <Showcase/>
+        <br/>
+        <br/>
         <Home />
         <br />
         <Middle />
