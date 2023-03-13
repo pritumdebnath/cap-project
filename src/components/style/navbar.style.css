@@ -5,9 +5,9 @@
   list-style: none;
 }
 
-.navbarfont {
+/* .navbarfont {
   font-family: ;
-}
+} */
 
 header {
   height: 100vh;
@@ -18,7 +18,9 @@ header {
 }
 
 .navbar {
-  position: absolute;
+  position: sticky;
+  top: 0;
+  background: black;
   padding: 50px;
   display: flex;
   justify-content: space-between;
@@ -44,6 +46,10 @@ header {
 .navbar .nav-links ul li {
   margin: 0 25px;
 }
+
+/* .navbar.active {
+  background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%);
+} */
 
 .navbar .nav-links ul li.active a {
   color: blue;
@@ -79,7 +85,7 @@ header {
   }
 
   .nav-links {
-    top: 0;
+    /* top: 0;
     left: 0;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.20);
@@ -89,7 +95,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -100%;
+    margin-left: -100%; */
   }
 
   .nav-links.mobile-menu {

@@ -14,7 +14,6 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <br/>
       {/* change route names */}
       <Route path="/" exact>
         <Showcase/>

@@ -1,47 +1,59 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "../components/style/navbar.style.css";
-import image1 from '../assets/menubutton.png';
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
-export default class Navbar extends Component {
 
-
+export default class Navbar extends Component { 
+  
   render() {
     return (
-      <nav className='navbar navbarfont'>
-        <Link to="/" className='logo'>QCT</Link>
-        <div className='nav-links navbarfont'>
-          <ul>
-            <li className='active'>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/attractions">Attractions</Link>
-            </li>
-            <li>
-              <Link to="/addattractions">Add Attraction</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contactus">Contact Us</Link>
-            </li>
-          </ul>
-        </div>
-        <img src={image1} alt='navbutton' className='menu-hamburger'/>
+      <nav className="navbar active navbarfont navbar-expand-lg">
+        <button
+          className="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse nav-links navbarfont" id="navbarSupportedContent">
+        {/* <div className="nav-links navbarfont"> */}
+          <Link to="/" className="logo">
+            QCA
+          </Link>
+
+          
+            <ul className="navbar-nav">
+              <li className="active">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="active">
+                <Link to="/attractions">Attractions</Link>
+              </li>
+              <li className="active">
+                <Link to="/addattractions">Add Attraction</Link>
+              </li>
+              <li className="active">
+                <Link to="/about">About</Link>
+              </li>
+              <li className="active">
+                <Link to="/contactus">Contact Us</Link>
+              </li>
+            </ul>
+          </div>
+        {/* </div> */}
       </nav>
     );
   }
 }
 
-// const menuHamburger = document.querySelector('.menu-hamburger')
-// const navLinks = document.querySelector('.nav-links')
 
-// menuHamburger.addEventListener('click',()=>{
-//   navLinks.classList.toggle('mobile-menu')
-// })
 
 /* <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
         <Link to="/" className="navbar-brand">Home</Link>
