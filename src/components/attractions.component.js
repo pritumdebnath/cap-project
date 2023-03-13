@@ -6,7 +6,8 @@ import kingsIsland from "../assets/kingsIsland2.jpeg";
 import greatAmerican from "../assets/greatAmerican.jpeg";
 import paycorStadium from "../assets/paycorStadium.jpeg";
 import tqlStadium from "../assets/tqlStadium.jpeg";
-
+import heritageBankArena from "../assets/heritageBankArena.jpeg";
+import cincinnatiZoo from "../assets/cincinnatiZoo.jpeg";
 
 import '../components/style/attractions.css';
 
@@ -82,7 +83,7 @@ export default class Attractions extends Component {
     </div>
     <div className="col-md-4">
     <div class="card">
-    <h4 class="card-title text-align-center">Great American Ballpark</h4>
+    <h4 class="card-title gAHeading">Great American Ballpark</h4>
     <div class="card-body">
     <img className="card-img-top greatAmerican" src={greatAmerican}alt="greatAmericanStadium" />
       
@@ -105,32 +106,32 @@ export default class Attractions extends Component {
 </div>
 <div className="col-md-4">
   <div class="card card">    
-    <h4 class="card-title">TQL Stadium</h4>
-    <div class="card-body ">
-   
-    <img className="card-img-top tql" src={tqlStadium}alt="TQL Stadium" />
-    
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-  </div>
-</div>
-<div className="col-md-4">
-  <div class="card card">    
-    <h4 class="card-title">TQL Stadium</h4>
-    <div class="card-body ">
-   
-    <img className="card-img-top tql" src={tqlStadium}alt="TQL Stadium" />
-    
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-  </div>
-</div>
-<div className="col-md-4">
-  <div class="card card">    
     <h4 class="card-title">Paycor Stadium</h4>
     <div class="card-body ">
    
     <img className="card-img-top paycor" src={paycorStadium}alt="Paycor Stadium" />
+    
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+<div className="col-md-4">
+  <div class="card card">    
+    <h4 class="card-title">Heritage Bank Arena</h4>
+    <div class="card-body ">
+   
+    <img className="card-img-top heritage" src={heritageBankArena}alt="Cyclones Stadium" />
+    
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+  </div>
+</div>
+<div className="col-md-4">
+  <div class="card card">    
+    <h4 class="card-title">Cincinnati Zoo</h4>
+    <div class="card-body ">
+   
+    <img className="card-img-top cincinnatiZoo" src={cincinnatiZoo}alt="Land of Illusion" />
     
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     </div>
