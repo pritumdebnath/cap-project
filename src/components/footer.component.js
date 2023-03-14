@@ -26,22 +26,22 @@ export default class Footer extends Component {
                 Pritum Debnath
               </h5>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://www.linkedin.com/in/pritum-debnath-140766104/" className="text-white">
                   LinkedIn
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://github.com/pritumdebnath" className="text-white">
                   Github
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://pritumdebnath.github.io/portfolio/" className="text-white">
                   Portfolio
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="mailto:pritumdebnath@gmail.com" className="text-white">
                   Email
                 </a>
               </p>
@@ -51,22 +51,22 @@ export default class Footer extends Component {
                 Gideon Asante
               </h5>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://www.linkedin.com/in/gideonasanteacheampong/" className="text-white">
                   LinkedIn
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://github.com/kwameasannte42" className="text-white">
                   Github
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://kwameasannte42.github.io/portfolio-with-bootstrap/" className="text-white">
                   Portfolio
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="mailto:kwameasante42@gmail.comgit" className="text-white">
                   Email
                 </a>
               </p>
@@ -76,22 +76,22 @@ export default class Footer extends Component {
                 Ibrahim Abdi
               </h5>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://www.linkedin.com/in/ibrahim-abdi-1b9001260/" className="text-white">
                   LinkedIn
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://github.com/IbrahimAbdi2003" className="text-white">
                   Github
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://ibrahimabdi2003.github.io/portFolio/" className="text-white">
                   Portfolio
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="mailto:ibrahimabdi2367@gmail.com" className="text-white">
                   Email
                 </a>
               </p>
@@ -101,22 +101,22 @@ export default class Footer extends Component {
                 Douglas Easterling
               </h5>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://www.linkedin.com/in/douglas-e-67051b15b/" className="text-white">
                   LinkedIn
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://github.com/Holimon86" className="text-white">
                   Github
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="https://holimon86.github.io/portfolio/" className="text-white">
                   Portfolio
                 </a>
               </p>
               <p>
-                <a href="#" className="text-white">
+                <a href="mailto:douglaseasterling@yahoo.com" className="text-white">
                   Email
                 </a>
               </p>
