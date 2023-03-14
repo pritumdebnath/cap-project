@@ -12,6 +12,7 @@ import xavierUniversity from "../assets/xavierUniversity.jpeg";
 import cincinnatiZoo from "../assets/cincinnatiZoo.jpeg";
 import taftTheater from "../assets/taftTheater.jpeg";
 import cincinnatiSkyline from "../assets/cincinnatiSkyline.jpeg";
+//import cincinnatiSportsLogos from "../assets/cincinnatiSportsLogos.png";
 
 import '../components/style/attractions.css';
 
@@ -70,17 +71,24 @@ export default class Attractions extends Component {
     render() {
     return (
       <div> 
-      <img className="home-component" src={cincinnatiSkyline}alt="Cincinnati Skyline" />
+      <img className="home-component" src={cincinnatiSkyline}alt="Cincinnati Skyline"></img>
+      
             
         <h2 id="header">Posted Attractions</h2>
 
+{/*<div className='logos'>
+  <img src={cincinnatiSportsLogos} alt="cincinnatiSportsLogos" />
+</div>*/}
+      
+  <div className='backattractions'>
   <div className="container">
+  </div>
     <div className="row">
       <div className="col-md-4">
       <div class="card">     
    <h3 class="card-title kIHeader">Kings Island</h3>
     <div class="card-body">  
-        <img className="card-img-top" src={kingsIsland}alt="Kings Island Roller Coaster" />
+        <img className="card-img-top kI" src={kingsIsland}alt="Kings Island Roller Coaster" />
   
       <p class="card-text">Kings Island is a 364-acre amusement park located 24 miles (39 km) northeast of Cincinnati in Mason, Ohio, United States. Owned and operated by Cedar Fair, the park first opened in 1972 by the Taft Broadcasting Company.</p>
   
@@ -148,7 +156,7 @@ export default class Attractions extends Component {
     <h3 class="card-title cZHeader">University of Cincinnati</h3>
     <div class="card-body ">
    
-    <img className="card-img-top ucCampus" src={ucCampus}alt="University of Cincinnati" />
+    <img className="card-img-top uc" src={ucCampus}alt="University of Cincinnati" />
     
       <p class="card-text">UC boasts many top-ranked programs, and is the No. 1 public university for co-op (No. 3 overall). Named among the world's 100 most-innovative universities and our campus is listed among the world's most beautiful.</p>
     </div>
@@ -159,7 +167,7 @@ export default class Attractions extends Component {
     <h3 class="card-title cZHeader">Xavier University</h3>
     <div class="card-body ">
    
-    <img className="card-img-top xavierUniversity" src={xavierUniversity}alt="Xavier University" />
+    <img className="card-img-top xavier" src={xavierUniversity}alt="Xavier University" />
     
       <p class="card-text">Xavier University is a private university located in Cincinnati, Ohio, providing a liberal arts education in the Jesuit Catholic tradition. Founded in 1831, the University is the sixth-oldest Catholic university in the nation.</p>
     </div>
@@ -178,7 +186,6 @@ export default class Attractions extends Component {
 </div>
 </div>
 </div>
-
           <tbody>
             { this.attractionList() }
           </tbody>

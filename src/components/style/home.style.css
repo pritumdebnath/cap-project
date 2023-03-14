@@ -113,3 +113,8 @@ hr {
   background-image: -moz-linear-gradient(to right, white, transparent, white), -webkit-linear-gradient(transparent, rgba(0,0,0,0.55) 150%);
   background-image: -ms-linear-gradient(to right, white, transparent, white), -webkit-linear-gradient(transparent, rgba(0,0,0,0.55) 150%);
 }
+
+.home-images {
+  height: 300px;
+  border-radius: 100px;
+}
