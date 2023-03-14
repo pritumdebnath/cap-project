@@ -3,6 +3,14 @@
     width: 100vw;
     
 }
+ 
+.backattractions {
+    
+    background-image: url(./images/blueOrangeAbstract.png);
+    background-size: cover;
+    background-repeat: repeat;
+    /*opacity: .6;*/
+  }
 
 #header{
     text-align: center;
@@ -10,12 +18,14 @@
     font-family: serif;
     font-weight: 200;
     font-size: 40px;
+    
 }
 
 .card{
     height:500px;
     margin-top: 40px;
     margin-bottom: 20px;
+    
 }
 
 .card-text{
@@ -23,6 +33,10 @@
     font-weight: 400;
     font-family: serif;
     font-size: 16px;
+}
+
+.kI{
+    height:200px; 
 }
 
 .tql{
@@ -33,13 +47,22 @@
     height:200px;
 }
 
-.coney{
+.paycor{
     height:217px;
+}
+
+.heritage{
+    height: 200px;
+}
+
+.cincinnatiZoo{
+    height: 200px;
 }
 
 .uc{
     height: 200px;
 }
+
 .xavier{
     height: 200px;
 }
