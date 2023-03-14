@@ -1,12 +1,163 @@
-import React, { Component } from 'react';
-
+import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../components/style/about.style.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import image7 from "../assets/pritum.jpeg";
+import image8 from "../assets/doug.jpeg";
+import image9 from "../assets/abdi.jpeg";
+import image10 from "../assets/gid.jpg";
 
 export default class About extends Component {
   render() {
     return (
-      <div>
-        <p>You are on the About component!</p>
-      </div>
-    )
+      <>
+        <div className="container-fluid text-center text-white about-top">
+          <p>You are on the About component!</p>
+        </div>
+
+        <div className=" container-fluid about-middle text-center text-white">
+          <h2>About Cincinnati</h2>
+          <p className="cinci">
+            Cincinnati, city, seat of Hamilton county, southwestern Ohio, U.S.
+            It lies along the Ohio River opposite the suburbs of Covington and
+            Newport, Kentucky, 15 miles (24 km) east of the Indiana border and
+            about 50 miles (80 km) southwest of Dayton. Cincinnati is Ohio’s
+            third largest city, after Columbus and Cleveland. Other suburban
+            communities include Norwood and Forest Park in Ohio and Florence in
+            Kentucky. Picturesquely situated between the Little Miami and Great
+            Miami rivers at their confluences with the Ohio, it is encircled by
+            hills rising 400–600 feet (120–180 metres) above the river. It is
+            the hub of a metropolitan area that includes portions of Ohio,
+            Indiana, and Kentucky. Inc. town, 1802; city, 1819. Area city, 80
+            square miles (206 square km). Pop. (2010) 296, 943;
+            Cincinnati-Middletown Metro Area, 2,130,151; (2020) 309,317;
+            Cincinnati Metro Area, 2,256,884.
+          </p>
+        </div>
+        <div className="team">
+        <br />
+        <br />
+        <h3 className="hhh text-center">The A-Team</h3>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-md-3">
+              <div className="card profile-card-1">
+                <img
+                  src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb"
+                  alt="profile-sample1"
+                  className="background"
+                />
+                <img src={image7} alt="pritum" className="profile" />
+                <div className="card-content">
+                  <h2>
+                    Pritum Debnath<small>Engineer</small>
+                  </h2>
+                  <div className="icon-block">
+                    <a href="https://www.linkedin.com/in/pritum-debnath-140766104/">
+                      <i className="bi bi-linkedin"></i>
+                    </a>
+                    <a href="pritum@hotmail.com">
+                      {" "}
+                      <i className="bi bi-envelope-at-fill"></i>
+                    </a>
+                    <a href="https://github.com/pritumdebnath">
+                      {" "}
+                      <i className="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="card profile-card-1">
+                <img
+                  src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb"
+                  alt="profile-sample1"
+                  className="background"
+                />
+                <img src={image8} alt="Doug" className="profile" />
+                <div className="card-content">
+                  <h2>
+                    Douglas Easterling<small>Engineer</small>
+                  </h2>
+                  <div className="icon-block">
+                    <a href="https://www.linkedin.com/in/douglas-e-67051b15b/">
+                      <i className="bi bi-linkedin"></i>
+                    </a>
+                    <a href="douglaseasterling@yahoo.com">
+                      {" "}
+                      <i className="bi bi-envelope-at-fill"></i>
+                    </a>
+                    <a href="https://github.com/Holimon86">
+                      {" "}
+                      <i className="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="card profile-card-1">
+                <img
+                  src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb"
+                  alt="profile-sample1"
+                  className="background"
+                />
+                <img src={image10} alt="Gideon" className="profile" />
+                <div className="card-content">
+                  <h2>
+                    Gideon Asante<small>Engineer</small>
+                  </h2>
+                  <div className="icon-block">
+                    <a href="https://www.linkedin.com/in/gideonasanteacheampong/">
+                      <i className="bi bi-linkedin"></i>
+                    </a>
+                    <a href="kwameasante42@gmail.com">
+                      {" "}
+                      <i className="bi bi-envelope-at-fill"></i>
+                    </a>
+                    <a href="https://github.com/kwameasannte42">
+                      {" "}
+                      <i className="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="card profile-card-1">
+                <img
+                  src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb"
+                  alt="profile-sample1"
+                  className="background"
+                />
+                <img src={image9} alt="Ibrahim" className="profile" />
+                <div className="card-content">
+                  <h2>
+                    Ibrahim Abdi<small>Engineer</small>
+                  </h2>
+                  <div className="icon-block">
+                    <a href="https://www.linkedin.com/in/ibrahim-abdi-1b9001260/">
+                      <i className="bi bi-linkedin"></i>
+                    </a>
+                    <a href="ibrahimabdi2367@gmail.com">
+                      {" "}
+                      <i className="bi bi-envelope-at-fill"></i>
+                    </a>
+                    <a href="https://github.com/IbrahimAbdi2003">
+                      {" "}
+                      <i className="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        </div>
+      </>
+    );
   }
 }
