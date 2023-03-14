@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import image1 from "../assets/cinci1.jpg";
-import image2 from "../assets/cinci2.jpg";
-import image3 from "../assets/cinci3.jpg";
 import image4 from "../assets/soccer.png";
 import image5 from "../assets/reds.png";
 import image6 from "../assets/bengals.png";

@@ -11,6 +11,7 @@ import Contact from "./components/contactUs.component"
 import Showcase from './components/showcase';
 import Middle from './components/middle.component';
 import Footer from './components/footer.component';
+import Slider from './components/slider.component';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Home />
         <br />
         <Middle />
+        <br />
+        <Slider />
         <br />
       </Route>
       <Route path="/attractions" component={Attractions} />
