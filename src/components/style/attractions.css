@@ -22,7 +22,7 @@
     margin-top: 20px;
     font-weight: 400;
     font-family: serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .tql{
@@ -35,6 +35,16 @@
 
 .coney{
     height:217px;
+}
+
+.uc{
+    height: 200px;
+}
+.xavier{
+    height: 200px;
+}
+.taftTheater{
+    height: 200px;
 }
 
 .kIHeader{
@@ -79,3 +89,4 @@
     font-weight: 200;
     font-size: 32px;
 }
+

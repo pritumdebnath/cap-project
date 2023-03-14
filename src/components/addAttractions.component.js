@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Rating from "react-rating-stars-component";
+import '../components/style/addAttractions.style.css';
 
 export default class addAttractions extends Component {
   constructor(props) {
@@ -94,157 +95,161 @@ export default class addAttractions extends Component {
   render() {
     const { currentStep } = this.state;
     return (
-      
-      <div className="container-add" style={{ margin: "500px" }}>
-        <form onSubmit={this.onSubmit}>
-          {currentStep === 1 && (
-            <div className="row setup-content" id="step-1">
-              <div className="col-md-6 offset-md-3">
-                <h1 className="text-center">Attraction</h1>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    required
-                    className="form-control"
-                    value={this.state.attraction}
-                    onChange={this.onChangeAttraction}
-                    placeholder="Enter Attraction"
-                  />
-                </div>
-                <br />
-                <div className="form-group">
-                  <input
-                    type="text"
-                    required
-                    className="form-control"
-                    value={this.state.address}
-                    onChange={this.onChangeAddress}
-                    placeholder="Enter Address"
-                  />
-                </div>
-                <br />
-                <div className="form-group text-center">
-                  <div className="row justify-content-between">
-                    <div className="col-4">
+      <div className="back">
+      <div className="container-add">
+        <div className="body-card">
+          <div className="card">
+            <form onSubmit={this.onSubmit}>
+              {currentStep === 1 && (
+                <div className="row setup-content" id="step-1">
+                  <div className="col-md-6 offset-md-3">
+                    <h1 className="text-center">Attraction</h1>
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        required
+                        className="form-control"
+                        value={this.state.attraction}
+                        onChange={this.onChangeAttraction}
+                        placeholder="Enter Attraction"
+                      />
                     </div>
-                    <div className="col-4 text-right">
-                      <button
-                        className="btn btn-success btn-lg"
-                        type="button"
-                        onClick={() => this.setState({ currentStep: 2 })}
-                      >
-                        Next
-                      </button>
+                    <br />
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        required
+                        className="form-control"
+                        value={this.state.address}
+                        onChange={this.onChangeAddress}
+                        placeholder="Enter Address"
+                      />
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-          {currentStep === 2 && (
-            <div className="row setup-content" id="step-2">
-              <div className="col-md-6 offset-md-3">
-                <h1 className="text-center">Detail</h1>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    required
-                    className="form-control"
-                    value={this.state.image}
-                    onChange={this.onChangeImage}
-                    placeholder="Enter Image URL"
-                  />
-                </div>
-                <br />
-                <div className="form-group">
-                  <input
-                    type="text"
-                    required
-                    className="form-control"
-                    value={this.state.description}
-                    onChange={this.onChangeDescription}
-                    placeholder="Enter Description"
-                  />
-                </div>
-                <br />
-                <div className="form-group text-center">
-                  <div className="row justify-content-between">
-                    <div className="col-4">
-                      <button
-                        className="btn btn-primary btn-lg"
-                        type="button"
-                        onClick={() => this.prevStep()}
-                      >
-                        Previous
-                      </button>
-                    </div>
-                    <div className="col-4 text-right">
-                      <button
-                        className="btn btn-success btn-lg"
-                        type="button"
-                        onClick={() => this.setState({ currentStep: 3 })}
-                      >
-                        Next
-                      </button>
+                    <br />
+                    <div className="form-group text-center">
+                      <div className="row justify-content-between">
+                        <div className="col-4"></div>
+                        <div className="col-4 text-right">
+                          <button
+                            className="btn btn-success btn-lg"
+                            type="button"
+                            onClick={() => this.setState({ currentStep: 2 })}
+                          >
+                            Next
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          )}
+              )}
+              {currentStep === 2 && (
+                <div className="row setup-content" id="step-2">
+                  <div className="col-md-6 offset-md-3">
+                    <h1 className="text-center">Detail</h1>
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        required
+                        className="form-control"
+                        value={this.state.image}
+                        onChange={this.onChangeImage}
+                        placeholder="Enter Image URL"
+                      />
+                    </div>
+                    <br />
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        required
+                        className="form-control"
+                        value={this.state.description}
+                        onChange={this.onChangeDescription}
+                        placeholder="Enter Description"
+                      />
+                    </div>
+                    <br />
+                    <div className="form-group text-center">
+                      <div className="row justify-content-between">
+                        <div className="col-4">
+                          <button
+                            className="btn btn-primary btn-lg"
+                            type="button"
+                            onClick={() => this.prevStep()}
+                          >
+                            Previous
+                          </button>
+                        </div>
+                        <div className="col-4 text-right">
+                          <button
+                            className="btn btn-success btn-lg"
+                            type="button"
+                            onClick={() => this.setState({ currentStep: 3 })}
+                          >
+                            Next
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
 
-          {currentStep === 3 && (
-            <div className="row setup-content" id="step-3">
-              <div className="col-md-6 offset-md-3">
-                <h1 className="text-center">Creator</h1>
-                <label className="display-3">Rating</label>
-                <div className="form-group">
-                  <Rating
-                    count={5}
-                    size={24}
-                    activeColor="yellow"
-                    value={this.state.ratings}
-                    onChange={this.onChangeRatings}
-                  />
-                </div>
-
-                <br />
-                <div className="form-group">
-                  <input
-                    type="text"
-                    required
-                    className="form-control"
-                    value={this.state.user}
-                    onChange={this.onChangeUser}
-                    placeholder="Enter Your Name"
-                  />
-                </div>
-                <br />
-                <div className="form-group text-center">
-                  <div className="row justify-content-between">
-                    <div className="col-4">
-                      <button
-                        className="btn btn-primary btn-lg"
-                        type="button"
-                        onClick={() => this.setState({ currentStep: 2 })}
-                      >
-                        Preview
-                      </button>
+              {currentStep === 3 && (
+                <div className="row setup-content" id="step-3">
+                  <div className="col-md-6 offset-md-3">
+                    <h1 className="text-center">Creator</h1>
+                    <label className="h3">Rating</label>
+                    <div className="form-group">
+                      <Rating
+                        count={5}
+                        size={24}
+                        activeColor="yellow"
+                        value={this.state.ratings}
+                        onChange={this.onChangeRatings}
+                      />
                     </div>
-                    <div className="col-4 text-right">
-                      <button
-                        className="btn btn-success btn-lg"
-                        type="submit"
-                      >
-                        Submit
-                      </button>
+
+                    <br />
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        required
+                        className="form-control"
+                        value={this.state.user}
+                        onChange={this.onChangeUser}
+                        placeholder="Enter Your Name"
+                      />
+                    </div>
+                    <br />
+                    <div className="form-group text-center">
+                      <div className="row justify-content-between">
+                        <div className="col-4">
+                          <button
+                            className="btn btn-primary btn-lg"
+                            type="button"
+                            onClick={() => this.setState({ currentStep: 2 })}
+                          >
+                            Previous
+                          </button>
+                        </div>
+                        <div className="col-4 text-right">
+                          <button
+                            className="btn btn-success btn-lg"
+                            type="submit"
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          )}
-        </form>
+              )}
+            </form>
+          </div>
+        </div>
+      </div>
       </div>
     );
   }
