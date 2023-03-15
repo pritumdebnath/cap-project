@@ -13,12 +13,10 @@ export default class Footer extends Component {
           <div className="row text-center text-md-left">
             <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
               <h5 className="text-uppercase mb-4 font-weight-bold footernamecolor">
-                Company Name
+                Queen City Tours
               </h5>
               <p className="footerlinkscolor">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Numquam cupiditate, dignissimos sed modi tempora laborum maiores
-                non facilis architecto quam!
+                Welcome to Queen City! A wonderful place to explore attractions. View our page and find attractions that fit you!
               </p>
               <div className="">
                 <div className="col-md-7 col-lg-12">

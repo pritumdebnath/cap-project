@@ -6,13 +6,13 @@ import Navbar from "./components/navbar.component"
 import Home from "./components/home.component";
 import Attractions from "./components/attractions.component";
 import addAttractions from "./components/addAttractions.component";
+import Booking from "./components/booking.component";
 import About from "./components/about.component";
 import Contact from "./components/contactUs.component"
 import Showcase from './components/showcase';
 import Middle from './components/middle.component';
 import Footer from './components/footer.component';
 import Slider from './components/slider.component';
-import BookingPage from './components/booking.compontent';
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
       </Route>
       <Route path="/attractions" component={Attractions} />
       <Route path="/addattractions" component={addAttractions} />
+      <Route path="/booking" component={Booking} />
       <Route path="/about" component={About} />
       <Route path="/contactus" component={Contact} />
       <Footer />

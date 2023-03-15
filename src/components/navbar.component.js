@@ -61,6 +61,9 @@ class Navbar extends React.Component {
             <div className='itemcontact'>
               <Link to="/addattractions" className='acontact'>Add Attraction</Link>
             </div>
+            {/* <div className='itemcontact'>
+              <Link to="/booking" className='acontact'>Booking</Link>
+            </div> */}
             <div className='itemcontact'>
               <Link to="/about" className='acontact'>About</Link>
             </div>
@@ -97,6 +100,10 @@ class Navbar extends React.Component {
                             <div className="modal-line">
                             <NavLink to="/addattractions" className='acontact'>Add Attraction</NavLink>
                             </div>
+                            
+                            {/* <div className="modal-line">
+                            <NavLink to="/booking" className='acontact'>Booking</NavLink>
+                            </div> */}
 
                             <div className="modal-line">
                             <NavLink to="/about" className='acontact'>About</NavLink>
