@@ -17,7 +17,7 @@ import BookingPage from './components/booking.compontent';
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       {/* change route names */}
       <Route path="/" exact>
         <Showcase/>
