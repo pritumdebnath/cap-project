@@ -6,7 +6,7 @@ const Middle = () => {
   return (
     <div className="container-fluid middle text-center">
       <div>
-        <button className="btn btn-primary btn-sm mb-5">
+        <button className="btn btn-danger btn-sm mb-5">
           Alert!
         </button>
         <p className="text-white">
