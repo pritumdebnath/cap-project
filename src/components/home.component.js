@@ -10,7 +10,7 @@ export default class Home extends Component {
   render() {
     return (
       <div id="home-section" style={{ position: "relative" }}>
-        <h2 className="text-center">Pride of Cincinnati!</h2>
+        <h2 className="text-center pride">Pride of Cincinnati!</h2>
         <hr />
         <section className="destinations container-fluid col-lg-11 col-md-10 col-sm-12 mt-5 mb-3">
           <div className="row">

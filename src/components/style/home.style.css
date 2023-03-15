@@ -4,7 +4,7 @@
 }
 
 .hhh {
-  color: #d64a09;
+  color: #ff6b35;
 }
 
 body {
@@ -15,7 +15,10 @@ body {
     sans-serif;
 }
 
-
+.btn-danger {
+  background-color: #ff6b35;
+  border-color: #ff6b35;
+}
 
 .showcase {
   background: url('https://images.pexels.com/photos/9675741/pexels-photo-9675741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
@@ -117,4 +120,8 @@ hr {
 .home-images {
   height: 300px;
   border-radius: 100px;
+}
+
+.pride {
+  color: #004e89
 }
