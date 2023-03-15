@@ -4,8 +4,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgb(255,141,0);
-  background: linear-gradient(90deg, rgba(255,141,0,1) 0%, rgba(0,1,255,1) 50%, rgba(0,3,96,1) 100%);
+  background: rgb(255,107,53);
+  background: linear-gradient(90deg, 
+  rgba(255,107,53,1) 0%, 
+  rgba(247,197,159,1) 25%, 
+  rgba(239,239,208,1) 50%, 
+  rgba(0,78,137,1) 75%,
+  rgba(26,101,158,1) 100%);
 }
 
 .container-add {

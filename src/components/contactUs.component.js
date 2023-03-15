@@ -78,7 +78,7 @@ export default class contactUs extends Component {
   }
   render() {
     return (
-      <div class="containercontact mt-5 shadow ">
+      <div class="containercontact shadow ">
         <div class="row">
             <div class="col-md-4 bg-primarycontact p-5 text-white order-sm-first order-last">
                 <h2>Queen City Attractions</h2>
