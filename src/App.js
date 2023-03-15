@@ -12,6 +12,7 @@ import Showcase from './components/showcase';
 import Middle from './components/middle.component';
 import Footer from './components/footer.component';
 import Slider from './components/slider.component';
+import BookingPage from './components/booking.compontent';
 
 function App() {
   return (
