@@ -1,5 +1,4 @@
 import React from "react";
-import image4 from "../assets/tql1.jpeg";
 import "../components/style/middle.style.css";
 
 const Middle = () => {
@@ -14,7 +13,6 @@ const Middle = () => {
           Cincinnati
         </p>
       </div>
-      <img className="new-image" src={image4} alt="brentspence" />
     </div>
   );
 };
