@@ -12,19 +12,19 @@ export default class Home extends Component {
       <div id="home-section" style={{ position: "relative" }}>
         <h2 className="text-center pride">Pride of Cincinnati!</h2>
         <hr />
-        <section className="destinations container-fluid col-lg-11 col-md-10 col-sm-12 mt-5 mb-3">
-          <div className="row">
-            <div className="col-lg-4 col-sm-6 text-center">
+        <section className="destinations container my-5">
+          <div className="row text-center">
+            <div className="col-lg-4 col-sm-4 text-center">
               <h5 className="p-3 hhh">FC Cincinnati</h5>
-              <img className="home-images" src={image4} alt="brentspence" />
+              <img className="home-images img-fluid" src={image4} alt="responsive" />
             </div>
-            <div className="col-lg-4 col-sm-6 text-center">
+            <div className="col-lg-4 col-sm-4 text-center">
               <h5 className="p-3 hhh">Reds</h5>
-              <img className="home-images" src={image5} alt="brentspence" />
+              <img className="home-images img-fluid" src={image5} alt="Responsive" />
             </div>
-            <div className="col-lg-4 col-sm-6 text-center">
+            <div className="col-lg-4 col-sm-4 text-center">
               <h5 className="p-3 hhh">Bengals</h5>
-              <img className="home-images" src={image6} alt="brentspence" />
+              <img className="home-images img-fluid" src={image6} alt="Responsive" />
             </div>
           </div>
         </section>

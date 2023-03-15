@@ -2,6 +2,7 @@ import React from "react";
 import image1 from "../assets/cinci1.jpg";
 import image2 from "../assets/cinci2.jpg";
 import image3 from "../assets/cinci3.jpg";
+import image4 from "../assets/tql1.jpeg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Slider = () => {
@@ -28,6 +29,12 @@ const Slider = () => {
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
       </div>
       <div class="carousel-inner rounded-4">
         <div class="carousel-item active">
@@ -38,6 +45,9 @@ const Slider = () => {
         </div>
         <div class="carousel-item">
           <img src={image3} class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src={image4} class="d-block w-100" alt="..." />
         </div>
       </div>
       <button
