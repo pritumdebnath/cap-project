@@ -12,7 +12,7 @@ export default class Home extends Component {
       <div id="home-section" style={{ position: "relative" }}>
         <h2 className="text-center pride">Pride of Cincinnati!</h2>
         <hr />
-        <section className="destinations container-fluid my-5">
+        <section className="destinations container my-5">
           <div className="row text-center">
             <div className="col-lg-4 col-sm-4 text-center">
               <h5 className="p-3 hhh">FC Cincinnati</h5>
