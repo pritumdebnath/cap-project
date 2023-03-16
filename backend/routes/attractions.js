@@ -32,11 +32,11 @@ router.route('/add').post((req, res) => {
   .catch(err => res.status(400).json('Error: ' + err));
 });
 
-// router.route('/:id').get((req, res) => {  
-//     Attraction.findById(req.params.id)  
-//       .then(attraction => res.json(attraction))  
-//       .catch(err => res.status(400).json('Error: ' + err));  
-//   });  
+router.route('/:id').get((req, res) => {  
+    Attraction.findById(req.params.id)  
+      .then(attraction => res.json(attraction))  
+      .catch(err => res.status(400).json('Error: ' + err));  
+  });  
 //   router.route('/:id').delete((req, res) => {  
 //     Attraction.findByIdAndDelete(req.params.id)  
 //       .then(() => res.json('Attraction deleted.'))  
