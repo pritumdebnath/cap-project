@@ -13,6 +13,7 @@ import Showcase from './components/showcase';
 import Middle from './components/middle.component';
 import Footer from './components/footer.component';
 import Slider from './components/slider.component';
+import oneAttraction from './components/oneAttraction.component';
 
 function App() {
   return (
@@ -29,11 +30,12 @@ function App() {
         <Slider />
         <br />
       </Route>
-      <Route path="/attractions" component={Attractions} />
+      <Route exact path="/attractions" component={Attractions} />
       <Route path="/addattractions" component={addAttractions} />
       <Route path="/booking" component={Booking} />
       <Route path="/about" component={About} />
       <Route path="/contactus" component={Contact} />
+      <Route exact path='/attractions/:id' component={oneAttraction} />
       <Footer />
     </Router>
   );

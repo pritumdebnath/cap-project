@@ -89,7 +89,7 @@ export default class addAttractions extends Component {
     axios.post('http://localhost:5000/attractions/add', attraction)
       .then(res => console.log(res.data));
 
-    window.location = '/'
+    window.location = '/attractions'
   };
 
   render() {
