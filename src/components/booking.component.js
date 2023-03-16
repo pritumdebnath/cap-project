@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
+import '../components/style/booking.style.css';
 
 function BookingPage() {
   const [showAlert, setShowAlert] = useState(false);
