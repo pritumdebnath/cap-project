@@ -98,7 +98,7 @@ export default class addAttractions extends Component {
       <div className="back">
       <div className="container-add">
         <div className="body-card">
-          <div className="card">
+          <div className="card-add">
             <form onSubmit={this.onSubmit}>
               {currentStep === 1 && (
                 <div className="row setup-content" id="step-1">

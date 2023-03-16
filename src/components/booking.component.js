@@ -26,7 +26,7 @@ function BookingPage() {
 
   return (
     <Container>
-      <h1 className="text-center mb-5">Book a Table</h1>
+      <h1 className="text-center mb-5">Book a Trip</h1>
       {showAlert && (
         <Alert
           variant="success"
@@ -37,7 +37,7 @@ function BookingPage() {
           the details.
         </Alert>
       )}
-      <Form onSubmit={handleSubmit}>
+      <Form className="form-booking" onSubmit={handleSubmit}>
         <Row>
           <Col md={6}>
             <Form.Group controlId="formBasicFirstName">
@@ -100,16 +100,6 @@ function BookingPage() {
             type="time"
             name="time"
             value={formData.time}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Form.Group controlId="formBasicGuests">
-          <Form.Label>Number of Guests</Form.Label>
-          <Form.Control
-            type="number"
-            name="guests"
-            value={formData.guests}
             onChange={handleChange}
             required
           />

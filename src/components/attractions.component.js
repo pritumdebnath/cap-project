@@ -112,7 +112,6 @@ export default class Attractions extends Component {
       </div>
     </div> */}
   
-<<<<<<< HEAD
 
     {/* <div className="col-md-4">
       <div class="card">     
@@ -125,14 +124,9 @@ export default class Attractions extends Component {
           <button type="button" class="btn btn-primary">Details</button> 
         </div>
       </div>
-=======
-      <p class="card-text">Kings Island is a 364-acre amusement park located 24 miles (39 km) northeast of Cincinnati in Mason, Ohio, United States. Owned and operated by Cedar Fair, the park first opened in 1972 by the Taft Broadcasting Company.</p>
-      <button type="button" class="btn btn-primary2">Details</button> 
->>>>>>> 789eaf22f1634cbb7d0fd094642b0a817cdc7dfa
     </div>
 
     <div className="col-md-4">
-<<<<<<< HEAD
       <div class="card">
         <h3 class="card-title gAHeader">Great American Ballpark</h3>
         <div class="card-body">
@@ -170,41 +164,6 @@ export default class Attractions extends Component {
           <button type="button" class="btn btn-primary">Details</button> 
         </div>
       </div>
-=======
-    <div class="card">
-    <h3 class="card-title gAHeader">Great American Ballpark</h3>
-    <div class="card-body">
-    <img className="card-img-top greatAmerican" src={greatAmerican}alt="greatAmericanStadium" />
-      
-      <p class="card-text">Located on the winding banks of the Ohio River in downtown Cincinnati, Great American Ball Park serves as the home of the Cincinnati Reds, baseball's first professional franchise.</p>
-      <button type="button" class="btn btn-primary2">Details</button> 
-    </div>
-  </div>
-    </div>
-
-      
-<div className="col-md-4">
-  <div class="card card">    
-    <h3 class="card-title tQLHeader">TQL Stadium</h3>
-    <div class="card-body ">
-   
-    <img className="card-img-top tql" src={tqlStadium}alt="TQL Stadium" />
-    
-      <p class="card-text">TQL Stadium, called West End Stadium during construction, is a soccer-specific stadium in Cincinnati, Ohio. It is the home of FC Cincinnati, a Major League Soccer (MLS) team that had been temporarily playing at Nippert Stadium.</p>
-      <button type="button" class="btn btn-primary2">Details</button> 
-    </div>
-  </div>
-</div>
-<div className="col-md-4">
-  <div class="card card">    
-    <h3 class="card-title paycorHeader">Paycor Stadium</h3>
-    <div class="card-body ">
-   
-    <img className="card-img-top paycor" src={paycorStadium}alt="Paycor Stadium" />
-    
-      <p class="card-text">Paycor Stadium has several amenities including 144 luxury suites, over 7,000 club seats, two club restaurants and a Bengals team store. Fans attending games at Paycor Stadium can see beautiful views of the Cincinnati skyline and the Ohio River.</p>
-      <button type="button" class="btn btn-primary2">Details</button> 
->>>>>>> 789eaf22f1634cbb7d0fd094642b0a817cdc7dfa
     </div>
 
 <div className="col-md-4">
