@@ -91,6 +91,7 @@ export default class Attractions extends Component {
         <img className="card-img-top kI" src={kingsIsland}alt="Kings Island Roller Coaster" />
   
       <p class="card-text">Kings Island is a 364-acre amusement park located 24 miles (39 km) northeast of Cincinnati in Mason, Ohio, United States. Owned and operated by Cedar Fair, the park first opened in 1972 by the Taft Broadcasting Company.</p>
+      <button type="button" class="btn btn-primary2">Details</button> 
     </div>
     </div>
     </div>
