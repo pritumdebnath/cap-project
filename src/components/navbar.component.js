@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/style/navbar.style.css";
@@ -61,9 +61,9 @@ class Navbar extends React.Component {
             <div className='itemcontact'>
               <Link to="/addattractions" className='acontact'>Add Attraction</Link>
             </div>
-            {/* <div className='itemcontact'>
+            <div className='itemcontact'>
               <Link to="/booking" className='acontact'>Booking</Link>
-            </div> */}
+            </div>
             <div className='itemcontact'>
               <Link to="/about" className='acontact'>About</Link>
             </div>
@@ -101,9 +101,9 @@ class Navbar extends React.Component {
                             <NavLink to="/addattractions" className='acontact'>Add Attraction</NavLink>
                             </div>
                             
-                            {/* <div className="modal-line">
+                            <div className="modal-line">
                             <NavLink to="/booking" className='acontact'>Booking</NavLink>
-                            </div> */}
+                            </div>
 
                             <div className="modal-line">
                             <NavLink to="/about" className='acontact'>About</NavLink>
