@@ -52,31 +52,23 @@ export default class Attractions extends Component {
         })
       }
     
-  render() {
-    return (
-  <div>
-  <div className='skyline'>
-  </div>
-  <div className='backattractions'>
-  <h2 id="header">Posted Attractions</h2>
-  <div>
-
-  <div>
-    <div className='attractionscards'>
-      {this.attractionList()}
-    </div>
-  </div>
-
-  </div>
-  </div>
-
-  {/* <div className="col-md-4">
-      <div class="card">     
-        <div class="card-body">  
-          {this.attractionList()}
-        </div>
-      </div>
-      
-    )
-  }
-}
+      render() {
+        return (
+          
+          <div>
+            <div>
+              <img src={cincinnatiSkyline} alt="" className='skyline' />
+            </div>
+            <div className='backattractions'>
+              <h2 id="header">Posted Attractions</h2>
+              <div>
+                  <div className='attractionscards'>
+                    {this.attractionList()}
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+        )
+      }
+    }
