@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import xavierUniversity from "../assets/xavierUniversity.jpeg";
 // import cincinnatiZoo from "../assets/cincinnatiZoo.jpeg";
 // import taftTheater from "../assets/taftTheater.jpeg";
-import cincinnatiSkyline from "../assets/cincinnatiSkyline.jpeg";
+import cincinnatiSkyline from "../images/cincinnatiSkyline.jpeg";
 //import cincinnatiSportsLogos from "../assets/cincinnatiSportsLogos.png";
 
 import '../components/style/attractions.css';
@@ -22,7 +22,7 @@ import '../components/style/attractions.css';
 const Attraction = props => {
   return (
     <>
-    
+    <div className='skyline'/>
     <div className='attractionscards'>
         <div class="card">     
           <div class="card-body">
@@ -85,9 +85,7 @@ export default class Attractions extends Component {
       
   <div>
   
-  <div> 
-    <img className="home-component" src={cincinnatiSkyline} alt="Cincinnati Skyline"></img>
-  </div>
+  
       
   <div className='backattractions'>
   <h2 id="header">Posted Attractions</h2>
