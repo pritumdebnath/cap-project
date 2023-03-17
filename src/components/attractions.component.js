@@ -84,6 +84,10 @@ export default class Attractions extends Component {
     return (
       
   <div>
+  
+  <div> 
+    <img className="home-component" src={cincinnatiSkyline} alt="Cincinnati Skyline"></img>
+  </div>
       
   <div className='backattractions'>
   <h2 id="header">Posted Attractions</h2>
