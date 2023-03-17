@@ -30,7 +30,7 @@ const Attraction = props => {
               {props.attraction.attraction}
             </div> 
             <div>
-              <img src={props.attraction.image} alt="image" className='card-img-top attractioncardimage' />
+              <img src={props.attraction.image} alt="" className='card-img-top attractioncardimage' />
             </div>
             <div>
               <button type="button" class="btn btn-primary2">
