@@ -33,7 +33,7 @@ function BookingPage() {
           onClose={() => setShowAlert(false)}
           dismissible
         >
-          Your reservation has been submitted! We'll contact you soon to confirm
+          Your trip has has been booking! We'll contact you soon to confirm
           the details.
         </Alert>
       )}
