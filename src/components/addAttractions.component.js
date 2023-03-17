@@ -98,7 +98,7 @@ export default class addAttractions extends Component {
       <div className="back">
       <div className="container-add">
         <div className="body-card">
-          <div className="card">
+          <div className="card-add">
             <form onSubmit={this.onSubmit}>
               {currentStep === 1 && (
                 <div className="row setup-content" id="step-1">
@@ -173,7 +173,7 @@ export default class addAttractions extends Component {
                       <div className="row justify-content-between">
                         <div className="col-4">
                           <button
-                            className="btn btn-primary btn-lg"
+                            className="btn btn-primary-3 btn-lg"
                             type="button"
                             onClick={() => this.prevStep()}
                           >
@@ -226,7 +226,7 @@ export default class addAttractions extends Component {
                       <div className="row justify-content-between">
                         <div className="col-4">
                           <button
-                            className="btn btn-primary btn-lg"
+                            className="btn btn-primary-3 btn-lg"
                             type="button"
                             onClick={() => this.setState({ currentStep: 2 })}
                           >

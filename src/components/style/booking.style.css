@@ -1,0 +1,71 @@
+/* Define colors */
+:root {
+  --primary-color: #004E89;
+  --secondary-color: #1A659E;
+  --tertiary-color: #EFEFD0;
+  --accent-color: #FF6B35;
+  --light-color: #F7C59F;
+}
+
+/* Style form elements */
+
+.form-booking {
+  background-color: var(--tertiary-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.input[type="text"],
+.input[type="email"],
+.input[type="tel"],
+.input[type="number"],
+.textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.input[type="submit"] {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+/* Style page elements */
+.h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.alert-success {
+  background-color: var(--light-color);
+  border-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+.row {
+  margin: 0 -0.5rem;
+}
+
+.col-md-6 {
+  padding: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
+}

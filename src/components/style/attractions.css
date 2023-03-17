@@ -46,7 +46,6 @@ background: linear-gradient(to right, #FF6B35 0%, #1A659E 53%, #004E89 100%); */
     color: rgb(255, 107, 53); 
     font-size: 16px; 
     line-height: 16px; 
-    padding: 6px; 
     border-radius: 5px; 
     font-family: Georgia, serif; 
     font-weight: normal; 
@@ -58,11 +57,12 @@ background: linear-gradient(to right, #FF6B35 0%, #1A659E 53%, #004E89 100%); */
     box-shadow: rgb(119, 115, 108) 3px 3px 17.5px 2.5px; 
     border: 1.5px solid rgb(86, 120, 142); 
     display: inline-block;
+    display: inline-block;
 }
 
 .card{
     height:600px;
-    width:600px;
+    
     margin-top: 40px;
     margin-bottom: 20px;
     background-image: url(./images/skyline4.png);
@@ -72,6 +72,7 @@ box-shadow: 0px 2px 14px 5px #483f3f;
 
 .card-text{
     margin-top: 20px;
+    width: 400px;
     font-weight: 600;
     font-family: serif;
     font-size: 16px;
@@ -80,87 +81,15 @@ box-shadow: 0px 2px 14px 5px #483f3f;
 
 .attractioncardtitle {
     text-align: center;
-    margin-top: 30px;
     font-family: serif;
     font-weight: 200;
     font-size: 32px;
 }
 
-.kI{
-    height:200px; 
-}
-
-.tql{
-    height:200px;
-}
-
-.greatAmerican{
-    height:200px;
-}
-
-.paycor{
-    height:217px;
-}
-
-.heritage{
+.attractioncardimage {
     height: 200px;
+    padding-top: 10px;
 }
 
-.cincinnatiZoo{
-    height: 200px;
-}
 
-.uc{
-    height: 200px;
-}
-
-.xavier{
-    height: 200px;
-}
-.taftTheater{
-    height: 200px;
-}
-
-.kIHeader{
-    text-align: center;
-    margin-top: 30px;
-    font-family: serif;
-    font-weight: 200;
-    font-size: 32px;
-}
-.gAHeader{
-    text-align: center;
-    margin-top: 30px;
-    font-family: serif;
-    font-weight: 200;
-    font-size: 32px;
-}
-.tQLHeader{
-    text-align: center;
-    margin-top: 30px;
-    font-family: serif;
-    font-weight: 200;
-    font-size: 32px;
-}
-.paycorHeader{
-    text-align: center;
-    margin-top: 30px;
-    font-family: serif;
-    font-weight: 200;
-    font-size: 32px;
-}
-.hAHeader{
-    text-align: center;
-    margin-top: 30px;
-    font-family: serif;
-    font-weight: 200;
-    font-size: 32px;
-}
-.cZHeader{
-    text-align: center;
-    margin-top: 30px;
-    font-family: serif;
-    font-weight: 200;
-    font-size: 32px;
-}
 
