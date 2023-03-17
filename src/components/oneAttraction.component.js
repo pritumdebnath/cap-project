@@ -39,14 +39,25 @@ export default class oneAttraction extends Component {
         <div className="lefty col-6 col-md-4 col-8 text-center text-white p-3">
           <h2 className="place-name">{this.state.attraction}</h2>
           <div className="place-photo">
-            <img src={this.state.image} alt="." className="img-fluid p-3" />
+            <img src={this.state.image} className="img-fluid p-3" alt="."  />
           </div>
         </div>
-        <div className="righty col-6 col-md-4 col-8 bg-light p-3">
-          <h5>{this.state.address}</h5>
+        <div className="righty col-6 col-md-4 col-8 bg-light p-2">
+          <div className="m-3">
+            <i className="righty-head">Address</i>
+            <h5>{this.state.address}</h5>
+          </div>
+          <div className="m-3">
+          <i className="righty-head">Description</i>
           <p>{this.state.description}</p>
-          <p>{this.state.ratings}</p>
-          <p>{this.state.user}</p>
+          </div>
+          <p>
+            <i className="righty-head">Ratings: </i> {this.state.ratings}
+          </p>
+          <p>
+            <i className="righty-head">Submitted by: </i>
+            {this.state.user}
+          </p>
         </div>
       </div>
     );
