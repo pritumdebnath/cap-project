@@ -1,7 +1,22 @@
 .one-attraction {
-  height: 65vh;
+  height: 100vh;
 }
 
 .lefty {
-  background-color: coral;
+  background-color: #FF6B35;
+  border-radius: 10px;
+}
+
+.righty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1A659E;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.righty-head {
+  color: #FF6B35;
 }

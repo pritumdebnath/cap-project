@@ -33,11 +33,6 @@ const Attraction = props => {
               <img src={props.attraction.image} alt="image" className='card-img-top attractioncardimage' />
             </div>
             <div>
-              <p class="card-text">
-                Kings Island is a 364-acre amusement park located 24 miles (39 km) northeast of Cincinnati in Mason, Ohio, United States. Owned and operated by Cedar Fair, the park first opened in 1972 by the Taft Broadcasting Company.
-              </p>
-            </div> 
-            <div>
               <button type="button" class="btn btn-primary2">
                 <Link Link to={"attractions/" + props.attraction._id}>See More</Link>
               </button> 
@@ -89,11 +84,6 @@ export default class Attractions extends Component {
     return (
       
   <div>
-  
-  <div> 
-    <img className="home-component" src={cincinnatiSkyline} alt="Cincinnati Skyline"></img>
-    
-  </div>
       
   <div className='backattractions'>
   <h2 id="header">Posted Attractions</h2>
