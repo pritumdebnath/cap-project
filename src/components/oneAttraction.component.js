@@ -36,17 +36,17 @@ export default class oneAttraction extends Component {
   render() {
     return (
       <div className="one-attraction row align-content-center justify-content-center">
-        <div className="lefty col-6 col-md-4 col-8 text-center text-white">
+        <div className="lefty col-6 col-md-4 col-8 text-center text-white p-3">
           <h2 className="place-name">{this.state.attraction}</h2>
           <div className="place-photo">
-            <img src={this.state.image} alt="" />
+            <img src={this.state.image} alt="." className="img-fluid p-3" />
           </div>
         </div>
-        <div className="righty col-6 col-md-4 col-8 bg-light text-center">
+        <div className="righty col-6 col-md-4 col-8 bg-light p-3">
           <h5>{this.state.address}</h5>
-          <div>{this.state.description}</div>
-          <div>{this.state.ratings}</div>
-          <div>{this.state.user}</div>
+          <p>{this.state.description}</p>
+          <p>{this.state.ratings}</p>
+          <p>{this.state.user}</p>
         </div>
       </div>
     );

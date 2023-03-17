@@ -4,4 +4,15 @@
 
 .lefty {
   background-color: coral;
+  border-radius: 10px;
+}
+
+.righty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1A659E;
+  border-radius: 10px;
+  text-align: center;
 }
