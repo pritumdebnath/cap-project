@@ -39,14 +39,14 @@ export default class oneAttraction extends Component {
         <div className="lefty col-6 col-md-4 col-8 text-center text-white">
           <h2 className="place-name">{this.state.attraction}</h2>
           <div className="place-photo">
-            <img src={this.state.image} alt="" />
+            <img src={this.state.image} alt="." className="img-fluid p-3" />
           </div>
         </div>
-        <div className="righty col-6 col-md-4 col-8 bg-light text-center">
+        <div className="righty col-6 col-md-4 col-8 bg-light">
           <h5>{this.state.address}</h5>
-          <div>{this.state.description}</div>
-          <div>{this.state.ratings}</div>
-          <div>{this.state.user}</div>
+          <p>{this.state.description}</p>
+          <p>{this.state.ratings}</p>
+          <p>{this.state.user}</p>
         </div>
       </div>
     );

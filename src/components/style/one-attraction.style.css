@@ -5,3 +5,11 @@
 .lefty {
   background-color: coral;
 }
+
+.righty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1A659E;
+}
