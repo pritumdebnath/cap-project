@@ -18,7 +18,16 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #004E89;
-  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.bookingbackground {
+  background: linear-gradient(90deg, 
+  rgba(0,78,137,1) 0%, 
+  rgba(26,101,158,1) 25%, 
+  rgba(239,239,208,1) 50%, 
+  rgba(247,197,159,1) 75%,
+  rgba(255,107,53,1) 100%);
 }
 
 /* Form */

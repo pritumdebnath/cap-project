@@ -25,7 +25,8 @@ function BookingPage() {
   };
 
   return (
-    <Container>
+    <div className="bookingbackground">
+    <Container >
       <h1 className="text-center mb-5">Book a Trip</h1>
       {showAlert && (
         <Alert
@@ -118,6 +119,7 @@ function BookingPage() {
         </Button>
       </Form>
     </Container>
+    </div>
   );
 }
 

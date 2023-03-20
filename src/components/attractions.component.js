@@ -17,9 +17,9 @@ const Attraction = props => {
             <div>
               <img src={props.attraction.image} alt="" className='card-img-top attractioncardimage' />
             </div>
-            <div>
+            <div className='button-position'>
               <button type="button" class="btn btn-primary2">
-                <Link Link to={"attractions/" + props.attraction._id}>See More</Link>
+                <Link Link to={"attractions/" + props.attraction._id} className='button-text'>See More</Link>
               </button> 
             </div>  
           </div>
