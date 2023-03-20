@@ -59,6 +59,13 @@ export default class Attractions extends Component {
             <div>
               <img src={cincinnatiSkyline} alt="" className='skyline' />
             </div>
+            <div>
+              <button type='submit'>1 Star</button>
+              <button type='submit'>2 Star</button>
+              <button type='submit'>3 Star</button>
+              <button type='submit'>4 Star</button>
+              <button type='submit'>5 Star</button>
+            </div>
             <div className='backattractions'>
               <h2 id="header">Posted Attractions</h2>
               <div>
