@@ -5,19 +5,15 @@
   justify-content: center;
 }
 
-/* .day {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.day {
   border: 1px solid #F7C59F;
-  width: 10em;
-  height: 15em;
-  margin: 1rem;
-} */
-.day:hover {
   background-color: #F7C59F;
-  width: 16em;
-  height: 22em;
+  
+}
+
+.day:hover {
+  background-color: #004E89;
+ 
 }
 
 .temp-container {
@@ -26,7 +22,7 @@
 
 .temp-high {
   padding: 0.3rem;
-  color: #EFEFD0;
+  color: #FF6B35;
 }
 .temp-low {
   padding: 0.3rem;
