@@ -2,7 +2,7 @@
 
 
 .day {
-  border: 1px solid #000000;
+  border: 1px solid #ffff;
   background-color: #cbcbc1;
   
 }
@@ -17,6 +17,6 @@
 }
 
 .temp-low {
-  color: #ffff;
+  color: #ffffff;
 }
 
