@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios';
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
 import '../components/style/booking.style.css';
 
 export default class contactUs extends Component {
@@ -22,6 +22,7 @@ export default class contactUs extends Component {
         date: " ",
         time: " ",
         bookingcomment: " ",
+        showAlert: false, // add showAlert to state and initialize it to false
       }
     }
 
@@ -74,6 +75,7 @@ export default class contactUs extends Component {
     console.log(booking)
     axios.post('http://localhost:5000/booking/add', booking)
     .then(res=>console.log(res.data));
+    this.setState({ showAlert: true }); // set showAlert to true after form submission
     // window.location="/"
     this.props.history.push('/booking');
     
@@ -86,15 +88,25 @@ export default class contactUs extends Component {
         time: '',
         bookingcomment: ''
     })
-    window.alert("Your trip has has been booked! We'll contact you soon to confirm the details.")
+    // window.alert("Your trip has has been booked! We'll contact you soon to confirm the details.")
     console.log(booking)
   }
 
   render() {
+    const { showAlert } = this.state; // destructure showAlert from state
     return (
       <div className="bookingbackground">
       <Container >
         <h1 className="text-center mb-5 h1-booking">Book a Trip</h1>
+        {showAlert && ( // display Alert only when showAlert is true
+            <Alert
+              variant="success"
+              onClose={() => this.setState({ showAlert: false })}
+              dismissible
+            >
+              Your trip has been booked! We'll contact you soon to confirm the details.
+            </Alert>
+          )}
         <Form className="form-booking" onSubmit={this.onSubmit}>
           <Row>
             <Col md={6}>
