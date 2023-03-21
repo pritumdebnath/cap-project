@@ -8,7 +8,7 @@ function DailyWeather({ dateNum, dayIcon, tempHigh, tempLow }) {
   dateNum = Intl.DateTimeFormat("en-US", options).format(dateNum);
 
   return (
-    <div className="container new-middle">
+    <div className="container new-middle1 col-3 col-md-2 col-sm-10 py-2">
       <div className="card day">
         <img className="card-img-top" src={dayIcon} alt=".." />
         <h2 className="text-white">{dateNum}</h2>
