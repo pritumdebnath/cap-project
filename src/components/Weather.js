@@ -31,8 +31,8 @@ function Weather() {
 
   return (
     <div className="container new-middle">
-      <div className="row">
-        <div className="col-3">
+      <div className="container">
+        <div className="row">
           {weatherData ? (
             weatherData.daily.slice(0, 5).map((day, i) => {
               return (
