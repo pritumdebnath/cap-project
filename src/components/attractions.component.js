@@ -30,27 +30,40 @@ const Attraction = props => {
 
 
 export default class Attractions extends Component {
-    constructor(props) {  
-        super(props); 
-        
-        this.state = {attractions: []};  
-      }
+  constructor(props) {  
+    super(props); 
     
-      componentDidMount() {
-        axios.get('http://localhost:5000/attractions/')
-         .then(response => {
-           this.setState({ attractions: response.data });
-         })
-         .catch((error) => {
-            console.log(error);
-         })
-      }
-    
-      attractionList() {
-        return this.state.attractions.map(currentattraction => {
-          return <Attraction attraction={currentattraction} key={currentattraction._id}/>;
-        })
-      }
+    this.state = {attractions: [], filteredAttractions: []};  
+  }
+
+  componentDidMount() {
+    axios.get('http://localhost:5000/attractions/')
+      .then(response => {
+        this.setState({ attractions: response.data, filteredAttractions: response.data });
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+  }
+
+  handleClick = (rating) => {
+    if (rating === "3") {
+      this.setState({ filteredAttractions: this.state.attractions.filter(attraction => attraction.ratings <= 3) });
+    } else if (rating === "4") {
+      this.setState({ filteredAttractions: this.state.attractions.filter(attraction => attraction.ratings === 4) });
+    } else if (rating === "5") {
+      this.setState({ filteredAttractions: this.state.attractions.filter(attraction => attraction.ratings === 5) });
+    } else {
+      this.setState({ filteredAttractions: this.state.attractions });
+    }
+  }
+
+  attractionList() {
+    return this.state.filteredAttractions.map(currentattraction => {
+      return <Attraction attraction={currentattraction} key={currentattraction._id}/>;
+    })
+  }
+
     
       render() {
         return (
@@ -59,15 +72,14 @@ export default class Attractions extends Component {
             <div>
               <img src={cincinnatiSkyline} alt="" className='skyline' />
             </div>
-            <div>
-              <button type='submit'>1 Star</button>
-              <button type='submit'>2 Star</button>
-              <button type='submit'>3 Star</button>
-              <button type='submit'>4 Star</button>
-              <button type='submit'>5 Star</button>
-            </div>
             <div className='backattractions'>
               <h2 id="header">Posted Attractions</h2>
+              <div className='filter-buttons'>
+            <button onClick={() => this.handleClick("3")}>3 Stars or Less</button>
+            <button onClick={() => this.handleClick("4")}>4 Stars</button>
+            <button onClick={() => this.handleClick("5")}>5 Stars</button>
+            <button onClick={() => this.handleClick("all")}>All Attractions</button>
+          </div>
               <div>
                   <div className='attractionscards'>
                     {this.attractionList()}
@@ -75,7 +87,6 @@ export default class Attractions extends Component {
               </div>
             </div>
           </div>
-          
         )
       }
     }
