@@ -9,7 +9,7 @@ import '../components/style/attractions.css';
 const Attraction = props => {
   return (
     <div className='attractionscards'>
-        <div class="card">     
+        <div class="card attractions-card">     
           <div class="card-body">
             <div className='attractioncardtitle'>
               {props.attraction.attraction}
