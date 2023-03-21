@@ -3,6 +3,29 @@
     width: 100vw;
 }
 
+.showcaseattraction {
+    background: url('./images/cincinnatiSkyline.jpeg')
+      no-repeat center/cover;
+      height: 650px;
+      
+  }
+  
+  .showcaseattraction .showcase-overlayattraction {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .showcaseattraction .showcase-overlayattraction .h1attraction {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+
 .attractionscards {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +33,10 @@
 }
  
 .backattractions {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 10px;
     /* background-image: url(./images/blueOrangeAbstract.png);
     background-size: cover;
     background-repeat: repeat; */
@@ -101,6 +127,95 @@
     margin-top: 10px;
     border-radius: 3%;
 }
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.button-31 {
+background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%; */
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
+
+.button-32 {
+background-image: linear-gradient(to right, #FF6B35 0%, #fc8d65 50%, #FF6B35 100%); 
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%; */
+}
+
+.button-32:hover,
+.button-32:focus {
+  opacity: .75;
+}
+
+@media (min-width: 768px) {
+    .showcaseattraction {
+      background-position: c;
+    }
+  
+    .showcaseattraction .showcase-overlayattraction h1 {
+      font-size: 64px;
+    }
+  
+    .showcaseattraction .showcase-overlayattraction p {
+      font-size: 18px;
+    }
+}
+
 
 
 

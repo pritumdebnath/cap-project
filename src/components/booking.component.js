@@ -27,7 +27,7 @@ function BookingPage() {
   return (
     <div className="bookingbackground">
     <Container >
-      <h1 className="text-center mb-5">Book a Trip</h1>
+      <h1 className="text-center mb-5 h1-booking">Book a Trip</h1>
       {showAlert && (
         <Alert
           variant="success"

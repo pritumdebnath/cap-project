@@ -103,7 +103,7 @@ export default class addAttractions extends Component {
               {currentStep === 1 && (
                 <div className="row setup-content" id="step-1">
                   <div className="col-md-6 offset-md-3">
-                    <h1 className="text-center">Attraction</h1>
+                    <h1 className="text-center h1-addattraction">Attraction</h1>
                     <div className="form-group">
                       <input
                         type="text"
@@ -146,7 +146,7 @@ export default class addAttractions extends Component {
               {currentStep === 2 && (
                 <div className="row setup-content" id="step-2">
                   <div className="col-md-6 offset-md-3">
-                    <h1 className="text-center">Detail</h1>
+                    <h1 className="text-center h1-addattraction">Detail</h1>
                     <div className="form-group">
                       <input
                         type="text"
@@ -198,7 +198,7 @@ export default class addAttractions extends Component {
               {currentStep === 3 && (
                 <div className="row setup-content" id="step-3">
                   <div className="col-md-6 offset-md-3">
-                    <h1 className="text-center">Creator</h1>
+                    <h1 className="text-center h1-addattraction">Creator</h1>
                     <label className="h3">Rating</label>
                     <div className="form-group">
                       <Rating
