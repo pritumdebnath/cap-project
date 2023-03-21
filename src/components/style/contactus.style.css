@@ -8,7 +8,7 @@
     width: 1000px!important;
 } */
 .pcontact{
-    font-size: 12px;
+    font-size: 13.5px;
 }
 /* .h1contact{
     font-family: Verdana, Geneva, Tahoma, sans-serif!important;
@@ -16,8 +16,15 @@
 .bg-primarycontact{
     background-color: #ff6b35 !important;
     font-family:Verdana, Geneva, Tahoma, sans-serif!important;
-
 }
+
+.leftboxcontact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .form-control {
     height: 36px;
     background: white;
