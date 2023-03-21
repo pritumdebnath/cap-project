@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';  
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import cincinnatiSkyline from '../assets/cincinnatiSkyline.jpeg';
+// import cincinnatiSkyline from '../assets/cincinnatiSkyline.jpeg';
 import '../components/style/attractions.css';
 
 
@@ -69,17 +69,18 @@ export default class Attractions extends Component {
         return (
           
           <div>
-            <div>
-              <img src={cincinnatiSkyline} alt="" className='skyline' />
+            <div className='showcaseattraction'>
+            <div className='showcase-overlayattraction'>
+            </div>
             </div>
             <div className='backattractions'>
               <h2 id="header">Posted Attractions</h2>
               <div className='filter-buttons'>
-            <button onClick={() => this.handleClick("3")}>3 Stars or Less</button>
-            <button onClick={() => this.handleClick("4")}>4 Stars</button>
-            <button onClick={() => this.handleClick("5")}>5 Stars</button>
-            <button onClick={() => this.handleClick("all")}>All Attractions</button>
-          </div>
+                <button onClick={() => this.handleClick("3")} className='button-32'>3 Stars or Less</button>
+                <button onClick={() => this.handleClick("4")} className='button-32'>4 Stars</button>
+                <button onClick={() => this.handleClick("5")} className='button-32'>5 Stars</button>
+                <button onClick={() => this.handleClick("all")} className='button-31'>All Attractions</button>
+              </div>
               <div>
                   <div className='attractionscards'>
                     {this.attractionList()}

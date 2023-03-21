@@ -80,8 +80,8 @@ export default class contactUs extends Component {
     return (
       <div class="containercontact shadow ">
         <div class="row">
-            <div class="col-md-4 bg-primarycontact p-5 text-white order-sm-first order-last">
-                <h2>Queen City Attractions</h2>
+            <div class="col-md-4 bg-primarycontact p-5 text-white order-sm-first order-last leftboxcontact">
+                <h2>Queen City Tours</h2>
                 {/* <p>We're open for any comment or suggestion!</p> */}
                 <div className='sidebarcontact'>
                 <div class="d-flex mt-2">
@@ -151,67 +151,3 @@ export default class contactUs extends Component {
     )
   }
 }
-
-{/* <div>
-      <div className="contactContainerReturn">
-          <h3 className='text-center'>Contact Us</h3>
-          <div className="containerContact">
-            <div className="contentContact">
-            <form id='contact-form' onSubmit={this.onSubmit}>
-              <div className="form-group">
-                <label className="contact-label">Name: </label>
-                <input
-                  type="text"
-                  required
-                  className="form-control"
-                  value={this.state.name}
-                  onChange={this.onChangeName}
-                  >
-                  </input>
-              </div>
-              <div className="form-group">
-                  <label className="contact-label">Email:</label>
-                  <input
-                  type="email"
-                  required
-                  className="form-control"
-                  value={this.state.email}
-                  onChange={this.onChangeEmail}
-                  >
-                  </input>
-              </div>
-              <div className="form-group">
-                  <label className="contact-label">Number:</label>
-                  <input
-                  type="text"
-                  required
-                  className="form-control"
-                  value={this.state.number}
-                  onChange={this.onChangeNumber}
-                  >
-                  </input>
-              </div>
-              <div className="form-group">
-                <label className="contact-label">Comments:</label>
-                  <textarea
-                  type="text"
-                  className="form-control"
-                  value={this.state.comment}
-                  onChange={this.onChangeComment}
-                  >
-                  </textarea>
-              </div>
-              <div className="form-group">
-                  <input
-                  type="submit"
-                  value="Send"
-                  className="btn btn-contact"
-                  />
-              </div>
-            </form>
-            </div>
-            <div className="content">
-            </div>
-          </div>
-      </div>
-      </div> */}
