@@ -102,3 +102,7 @@ hr {
 .pride {
   color: #004e89
 }
+
+#easter {
+  z-index: -100px;
+}

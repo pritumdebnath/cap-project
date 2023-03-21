@@ -7,6 +7,18 @@ import image6 from "../assets/bengals.png";
 import "../components/style/home.style.css";
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showGif: false,
+    };
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+  }
+
+  handleButtonClick() {
+    this.setState({ showGif: true });
+  }
+
   render() {
     return (
       <div id="home-section" style={{ position: "relative" }}>
@@ -19,7 +31,30 @@ export default class Home extends Component {
               <img className="home-images img-fluid" src={image4} alt="responsive" />
             </div>
             <div className="col-lg-4 col-sm-4 text-center">
-              <h5 className="p-3 hhh">Reds</h5>
+              <h5 className="p-3 hhh" onClick={this.handleButtonClick}>Reds</h5>
+              {this.state.showGif && (
+                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                  <img
+                    src="https://i.gifer.com/28g6.gif"
+                    alt="Fireworks"
+                    style={{ width: '100%', height: 'auto', position: 'absolute', top: 0, left: 0 }}
+                  />
+                  <marquee  style={{ position: 'relative', top: '200px' }}>
+                    <img
+                      src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1034da38251751.575a73ca2a072.gif"
+                      alt="Marching Band"
+                      style={{ width: '200px', height: '200px' }}
+                    />
+                  </marquee>
+                  <marquee scrollamount='50' style={{ position: 'relative', top: '200px' }}>
+                    <img
+                      src="https://spng.pngfind.com/pngs/s/680-6803351_sad-cat-meme-banana-hd-png-download.png"
+                      alt="jojo bannana cat"
+                      style={{ width: '200px', height: '200px' }}
+                    />
+                  </marquee>
+                </div>
+              )}
               <img className="home-images img-fluid" src={image5} alt="Responsive" />
             </div>
             <div className="col-lg-4 col-sm-4 text-center">
