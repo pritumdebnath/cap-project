@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import image4 from "../assets/soccer.png";
 import image5 from "../assets/reds.png";
 import image6 from "../assets/bengals.png";
-
 import "../components/style/home.style.css";
+import { Helmet } from 'react-helmet';
 
 export default class Home extends Component {
   constructor(props) {
@@ -20,7 +20,12 @@ export default class Home extends Component {
   }
 
   render() {
+    const TITLE = 'Home';
     return (
+      <>
+      <Helmet>
+          <title>{ TITLE }</title>
+      </Helmet>
       <div id="home-section" style={{ position: "relative" }}>
         <h2 className="text-center pride">Pride of Cincinnati!</h2>
         <hr />
@@ -64,6 +69,7 @@ export default class Home extends Component {
           </div>
         </section>
       </div>
+      </>
     );
   }
 }

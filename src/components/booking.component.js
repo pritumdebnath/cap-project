@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from 'axios';
 import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
 import '../components/style/booking.style.css';
+import { Helmet } from 'react-helmet';
 
 export default class contactUs extends Component {
   constructor (props){
@@ -94,7 +95,12 @@ export default class contactUs extends Component {
 
   render() {
     const { showAlert } = this.state; // destructure showAlert from state
+    const TITLE = 'Booking';
     return (
+      <>
+      <Helmet>
+          <title>{ TITLE }</title>
+      </Helmet>
       <div className="bookingbackground">
       <Container >
         <h1 className="text-center mb-5 h1-booking">Book a Trip</h1>
@@ -189,6 +195,7 @@ export default class contactUs extends Component {
         </Form>
       </Container>
       </div>
+      </>
     )
   }
 }

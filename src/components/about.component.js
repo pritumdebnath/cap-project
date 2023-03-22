@@ -6,11 +6,16 @@ import image7 from "../assets/pritum.jpeg";
 import image8 from "../assets/doug.jpeg";
 import image9 from "../assets/abdi.jpeg";
 import image10 from "../assets/gid.jpg";
+import { Helmet } from 'react-helmet';
 
 export default class About extends Component {
   render() {
+    const TITLE = 'About';
     return (
       <>
+        <Helmet>
+            <title>{ TITLE }</title>
+        </Helmet>
         <div className=" container-fluid about-middle text-center text-white">
           <h2 className="m-3">About Cincinnati</h2>
           <p className="container cinci">

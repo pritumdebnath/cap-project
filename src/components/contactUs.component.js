@@ -2,20 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/style/contactus.style.css";
-// import FooterHome from '../components/FooterHome'
-// import '../styles/contact.css'
-// import {BACKEND_URL} from '../config'
-
-
-// export default class contactUs extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <p>You are on the Contact Us component!</p>
-//       </div>
-//     )
-//   }
-// }
+import { Alert } from "react-bootstrap";
+import { Helmet } from 'react-helmet';
 
 export default class contactUs extends Component {
   constructor (props){
@@ -30,6 +18,7 @@ export default class contactUs extends Component {
         email: " ",
         number: " ",
         comment: " ",
+        showAlert: false, // add showAlert to state and initialize it to false
       }
     }
 
@@ -64,6 +53,7 @@ export default class contactUs extends Component {
     console.log(contact)
     axios.post('http://localhost:5000/contactus/add', contact)
     .then(res=>console.log(res.data));
+    this.setState({ showAlert: true }); // set showAlert to true after form submission
     // window.location="/"
     this.props.history.push('/contactus');
     
@@ -73,11 +63,17 @@ export default class contactUs extends Component {
         number: '',
         comment: ''
     })
-    window.alert('Thank you for your inquiry')
+    // window.alert('Thank you for your inquiry')
     console.log(contact)
   }
   render() {
+    const { showAlert } = this.state; // destructure showAlert from state
+    const TITLE = 'Contact Us';
     return (
+      <>
+      <Helmet>
+          <title>{ TITLE }</title>
+      </Helmet>
       <div class="containercontact shadow ">
         <div class="row">
             <div class="col-md-4 bg-primarycontact p-5 text-white order-sm-first order-last leftboxcontact">
@@ -144,10 +140,20 @@ export default class contactUs extends Component {
                     <div class="col-12 form-group">
                       <button type="submit" class="btn1 btn-primary1 mt-3" value="Send">Submit</button>
                     </div>
+                    {showAlert && ( // display Alert only when showAlert is true
+                      <Alert
+                        variant="success"
+                        onClose={() => this.setState({ showAlert: false })}
+                        dismissible
+                      >
+                        Thank you for your feedback!
+                      </Alert>
+                    )}
                   </form>
             </div>
         </div>
     </div>
+    </>
     )
   }
 }
