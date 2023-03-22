@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Rating from "react-rating-stars-component";
 import '../components/style/addAttractions.style.css';
+import { Helmet } from 'react-helmet';
 
 export default class addAttractions extends Component {
   constructor(props) {
@@ -94,7 +95,12 @@ export default class addAttractions extends Component {
 
   render() {
     const { currentStep } = this.state;
+    const TITLE = 'Add Attraction';
     return (
+      <>
+      <Helmet>
+          <title>{ TITLE }</title>
+      </Helmet>
       <div className="back">
       <div className="container-add">
         <div className="body-card">
@@ -251,6 +257,7 @@ export default class addAttractions extends Component {
         </div>
       </div>
       </div>
+      </>
     );
   }
 }

@@ -4,6 +4,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import cincinnatiSkyline from '../assets/cincinnatiSkyline.jpeg';
 import '../components/style/attractions.css';
+import { Helmet } from 'react-helmet';
 
 
 const Attraction = props => {
@@ -66,8 +67,12 @@ export default class Attractions extends Component {
 
     
       render() {
+        const TITLE = 'Attractions';
         return (
-          
+          <>
+          <Helmet>
+          <title>{ TITLE }</title>
+          </Helmet>
           <div>
             <div className='showcaseattraction'>
             <div className='showcase-overlayattraction'>
@@ -88,6 +93,7 @@ export default class Attractions extends Component {
               </div>
             </div>
           </div>
+          </>
         )
       }
     }

@@ -3,6 +3,7 @@ import axios from 'axios';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/style/contactus.style.css";
 import { Alert } from "react-bootstrap";
+import { Helmet } from 'react-helmet';
 
 export default class contactUs extends Component {
   constructor (props){
@@ -67,7 +68,12 @@ export default class contactUs extends Component {
   }
   render() {
     const { showAlert } = this.state; // destructure showAlert from state
+    const TITLE = 'Contact Us';
     return (
+      <>
+      <Helmet>
+          <title>{ TITLE }</title>
+      </Helmet>
       <div class="containercontact shadow ">
         <div class="row">
             <div class="col-md-4 bg-primarycontact p-5 text-white order-sm-first order-last leftboxcontact">
@@ -147,6 +153,7 @@ export default class contactUs extends Component {
             </div>
         </div>
     </div>
+    </>
     )
   }
 }
