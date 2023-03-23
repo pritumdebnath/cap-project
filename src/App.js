@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
+import page from "./components/page.js"
 
 import Navbar from "./components/navbar.component"
 import Home from "./components/home.component";
@@ -36,6 +37,7 @@ function App() {
       <Route path="/about" component={About} />
       <Route path="/contactus" component={Contact} />
       <Route exact path='/attractions/:id' component={oneAttraction} />
+      <Route path='*' component={page} />
       <Footer />
     </Router>
   );
