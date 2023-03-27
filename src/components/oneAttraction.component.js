@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../components/style/one-attraction.style.css";
+import "./style/one-attraction.style.css";
 
 export default class oneAttraction extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ export default class oneAttraction extends Component {
         <div className="lefty col-6 col-md-4 col-8 text-center text-white p-3">
           <h2 className="place-name">{this.state.attraction}</h2>
           <div className="place-photo">
-            <img src={this.state.image} className="img-fluid p-3" alt="."  />
+            <img src={this.state.image} className="img-fluid p-3" alt="." />
           </div>
         </div>
         <div className="righty col-6 col-md-4 col-8 bg-light p-2">
@@ -48,8 +48,8 @@ export default class oneAttraction extends Component {
             <h5>{this.state.address}</h5>
           </div>
           <div className="m-3">
-          <i className="righty-head">Description</i>
-          <p>{this.state.description}</p>
+            <i className="righty-head">Description</i>
+            <p>{this.state.description}</p>
           </div>
           <p>
             <i className="righty-head">Ratings: </i> {this.state.ratings}

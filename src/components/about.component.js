@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../components/style/about.style.css";
+import "./style/about.style.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import image7 from "../assets/pritum.jpeg";
 import image8 from "../assets/doug.jpeg";
 import image9 from "../assets/abdi.jpeg";
 import image10 from "../assets/gid.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 export default class About extends Component {
   render() {
-    const TITLE = 'About';
+    const TITLE = "About";
     return (
       <>
         <Helmet>
-            <title>{ TITLE }</title>
+          <title>{TITLE}</title>
         </Helmet>
         <div className=" container-fluid about-middle text-center text-white">
           <h2 className="m-3">About Cincinnati</h2>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/style/dailyweather.style.css";
+import "./style/dailyweather.style.css";
 
 function DailyWeather({ dateNum, dayIcon, tempHigh, tempLow }) {
   dateNum = new Date(dateNum * 1000);
