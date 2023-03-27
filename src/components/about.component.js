@@ -53,8 +53,11 @@ export default class About extends Component {
                   <img src={image7} alt="pritum" className="profile" />
                   <div className="card-content">
                     <h2>
-                      Pritum Debnath<small>Engineer</small>
+                      Pritum Debnath<small>"Hannibal"</small>
                     </h2>
+                    <small>
+                      Web Developer
+                    </small>
                     <div className="icon-block">
                       <a href="https://www.linkedin.com/in/pritum-debnath-140766104/">
                         <i className="bi bi-linkedin"></i>
@@ -81,8 +84,11 @@ export default class About extends Component {
                   <img src={image8} alt="Doug" className="profile" />
                   <div className="card-content">
                     <h2>
-                      Douglas Easterling<small>Engineer</small>
+                      Douglas Easterling<small>"Faceman"</small>
                     </h2>
+                    <small>
+                      Web Developer
+                    </small>
                     <div className="icon-block">
                       <a href="https://www.linkedin.com/in/douglas-e-67051b15b/">
                         <i className="bi bi-linkedin"></i>
@@ -109,8 +115,11 @@ export default class About extends Component {
                   <img src={image10} alt="Gideon" className="profile" />
                   <div className="card-content">
                     <h2>
-                      Gideon Asante<small>Engineer</small>
+                      Gideon Asante<small>"B.A."</small>
                     </h2>
+                    <small>
+                      Web Developer
+                    </small>
                     <div className="icon-block">
                       <a href="https://www.linkedin.com/in/gideonasanteacheampong/">
                         <i className="bi bi-linkedin"></i>
@@ -137,8 +146,11 @@ export default class About extends Component {
                   <img src={image9} alt="Ibrahim" className="profile" />
                   <div className="card-content">
                     <h2>
-                      Ibrahim Abdi<small>Engineer</small>
+                      Ibrahim Abdi<small>"Howling Mad"</small>
                     </h2>
+                    <small>
+                      Web Developer
+                    </small>
                     <div className="icon-block">
                       <a href="https://www.linkedin.com/in/ibrahim-abdi-1b9001260/">
                         <i className="bi bi-linkedin"></i>
